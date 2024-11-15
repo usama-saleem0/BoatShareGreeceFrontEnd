@@ -1,0 +1,3462 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../src/font/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../src/font/Urbanist-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.none-list {
+  text-decoration: none;
+  color: inherit;
+}
+
+.three-dots {
+  cursor: pointer;
+  width: 6px;
+}
+.threedots img {
+  width: 100%;
+}
+.threedots {
+  cursor: pointer;
+  width: 4px;
+}
+.three-dots img {
+  width: 100%;
+}
+.none-list:active {
+  background-color: transparent !important;
+  outline: none;
+}
+
+.side-bar-container-thiviyo {
+  width: 358px;
+  height: 100vh;
+  background-color: #0f59ae;
+  padding: 251px 52px 0px 52px;
+}
+
+.side-nav-pic {
+  width: 32px;
+}
+
+.side-nav-pic-destination img {
+  width: 100%;
+}
+.side-nav-pic img {
+  width: 100%;
+}
+
+.fix-side-box {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.side-bar-item-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Playfair Display";
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+a.none-list {
+  text-decoration: none;
+}
+
+.iUNkpW {
+  width: calc(100% - 358px);
+  background-color: #fff;
+  padding: 0 50px;
+  height: 100vh;
+  overflow: auto;
+  padding: 70px 50px;
+}
+
+/* Dashboard section css  */
+.dashboard-section {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+.main-dashboard {
+  width: 100%;
+}
+
+.dashboard-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  align-items: flex-start;
+}
+
+.cards-chart {
+  width: 70%;
+}
+.recent-activities {
+  width: 30%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  max-height: 77.8vh;
+  overflow-y: auto;
+}
+.activities {
+  padding-top: 25px;
+  height: 90%;
+  overflow-x: auto;
+}
+
+td.viwe-box-btn {
+  padding-bottom: 27px !important;
+}
+.underline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+.underline h5 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+
+.time-div p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+.activity-detail-div {
+  display: flex;
+  gap: 32px;
+  width: 81%;
+  border-left: 1px solid #000;
+  padding-left: 15px;
+  position: relative;
+}
+.activity-cicle {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  left: -2%;
+}
+.activity-detail-div p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  width: 90%;
+  padding-bottom: 40px;
+}
+.activity {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.dashboard-table-chart {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding-top: 20px;
+  align-items: flex-start;
+}
+/* .booking-chart-buttons {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 14.769px;
+}
+.booking-chart-buttons button {
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9291a5;
+     font-family: 'Urbanist';
+  background-color: #f8f8ff;
+  padding: 14px 25px;
+} */
+/* .chart-heading p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+} */
+.chart-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-chart-buttons {
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+  /* margin-bottom: 20px; */
+  background-color: #f8f8ff;
+  border-radius: 14.77px;
+  padding: 5px 10px;
+}
+.active-tab-dashboard {
+  background-color: #ffd700 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+}
+.booking-chart-buttons button {
+  padding: 10px 20px;
+  /* background-color: #765dff; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9291a5;
+  font-family: "Urbanist";
+  background-color: #f8f8ff;
+}
+
+.dashboard-table {
+  width: 70%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  max-height: 66vh;
+  overflow: auto;
+}
+
+.dashboard-table h6 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+  padding-bottom: 20px;
+}
+.income-location {
+  width: 30%;
+}
+.income-chart img {
+  width: 100%;
+}
+
+.dashboard-location {
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  max-height: 66vh;
+  overflow-y: auto;
+}
+.dashboard-locations {
+  padding-top: 35px;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.location-img {
+  width: 84px;
+  height: 70px;
+}
+.location-img img {
+  width: 100%;
+  height: 100%;
+}
+.location-img-div {
+  width: 74px;
+  height: 60px;
+}
+.location-img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.location-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.location-div p {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+  width: 80%;
+}
+.customer-profile span {
+  text-align: start;
+}
+/* customer section css  */
+.customer-details-section {
+  width: 100%;
+  padding-top: 60px;
+}
+.main-customer {
+  width: 100%;
+}
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 48px;
+}
+.control-img {
+  width: 43px;
+}
+.control-img img {
+  width: 100%;
+}
+.main-heading h5 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+.table-wrapper {
+  /* overflow-x: auto; */
+  width: 100%;
+}
+.customer-table {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+  max-height: 76vh;
+}
+.customer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Obssesion-img button.slick-arrow.slick-next {
+  display: block !important;
+  background-color: #ffd700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  z-index: 999;
+  border: 1px solid #ffd700;
+  right: 20px;
+}
+
+.Obssesion-img button.slick-arrow.slick-prev {
+  display: block !important;
+  background-color: #ffd700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  left: 50px;
+  z-index: 999;
+  border: 1px solid #ffd700;
+  
+
+}
+
+.Obssesion-img button.slick-arrow.slick-prev:before {
+  font-family: 'circular';
+  font-size: 26px;
+  color: #fff;
+}
+
+.Obssesion-img button.slick-arrow.slick-next:before {
+  font-family: 'circular';
+  font-size: 26px;
+  color: #fff;
+}
+.customer-table th {
+  background-color: #0f59ae;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  padding: 24px 35px;
+  text-align: left;
+}
+.customer-table td {
+  padding: 19px 26px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.customer-table th:nth-child(1),
+.customer-table td:nth-child(1) {
+  width: 30%; /* First column (Customer Profile) takes 50% width */
+}
+
+.customer-table th:nth-child(2),
+.customer-table td:nth-child(2) {
+  width: 20%; /* Second column (Customer Mail) takes 15% width */
+}
+
+.customer-table th:nth-child(3),
+.customer-table td:nth-child(3) {
+  width: 20%; /* Third column (Phone Number) takes 15% width */
+}
+
+.customer-table th:nth-child(4),
+.customer-table td:nth-child(4) {
+  width: 20%; /* Fourth column (Sign up Date) takes 15% width */
+}
+.customer-profile-img {
+  width: 63px;
+}
+.customer-profile-img img {
+  width: 100%;
+}
+.dash-table {
+  width: 100%;
+}
+.dash-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dash-table th {
+  background-color: #0f59ae;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  padding: 15px 15px;
+  text-align: left;
+}
+.dash-table td {
+  padding: 35px 15px;
+  text-align: center;
+}
+.dash-table td {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+
+.dash-table th:nth-child(1),
+.dash-table td:nth-child(1) {
+  width: 40%; /* Location column (with image and text) */
+  /* text-align: left; */
+}
+
+.dash-table th:nth-child(2),
+.dash-table td:nth-child(2) {
+  width: 10%; /* Duration */
+}
+
+.dash-table th:nth-child(3),
+.dash-table td:nth-child(3) {
+  width: 25%; /* Available Seats */
+}
+
+.dash-table th:nth-child(4),
+.dash-table td:nth-child(4) {
+  width: 20%; /* Price */
+}
+
+.customer-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.customer-table td {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+
+.action-icons {
+  display: flex;
+  gap: 10px;
+}
+.edit-img {
+  border-right: 2px solid #000;
+  padding-right: 10px;
+}
+
+/* Booking section css  */
+
+.booking-section {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 68px;
+}
+.main-booking {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 22%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dashboard-card {
+  width: 32%;
+}
+
+.chart-dashboard {
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 21px 25px;
+}
+.chart-dashboard img {
+  width: 100%;
+  height: 100%;
+}
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-details span {
+  border-left: 1px solid #000;
+  padding-left: 8px;
+  color: #807474;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.card-details p {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+.card-value {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card-value p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.yellow-img {
+  background-color: #ffd700;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+}
+.yellow-img img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.card-value h6 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+
+.chart-heading .card-details p {
+  font-size: 40px;
+  font-weight: 600;
+}
+.booking-table td {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.booking-table {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  max-height: 50vh;
+  overflow: auto;
+}
+.booking-table table {
+  width: 130%;
+  border-collapse: collapse;
+  /* table-layout: auto; */
+  overflow: auto;
+}
+
+.booking-table th {
+  background-color: #0f59ae;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.booking-table td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  /* text-wrap: nowrap; */
+}
+.booking-table th,
+.booking-table td {
+  padding: 22px 20px;
+  text-align: left;
+}
+/* Define specific widths for each column */
+.booking-table th:nth-child(1),
+.booking-table td:nth-child(1) {
+  width: 8%;
+}
+
+.booking-table th:nth-child(2),
+.booking-table td:nth-child(2) {
+  width: 10%; /* Customer Name */
+}
+
+.booking-table th:nth-child(3),
+.booking-table td:nth-child(3) {
+  width: 8%; /* Email */
+}
+
+.booking-table th:nth-child(4),
+.booking-table td:nth-child(4) {
+  width: 10%; /* Phone No */
+}
+
+.booking-table th:nth-child(5),
+.booking-table td:nth-child(5) {
+  width: 8%; /* Seats */
+}
+
+.booking-table th:nth-child(6),
+.booking-table td:nth-child(6) {
+  width: 8%; /* Duration */
+}
+
+.booking-table th:nth-child(7),
+.booking-table td:nth-child(7) {
+  width: 8%; /* Total */
+}
+
+.booking-table th:nth-child(8),
+.booking-table td:nth-child(8) {
+  width: 8%; /* Booking Date */
+}
+
+.booking-table th:nth-child(9),
+.booking-table td:nth-child(9) {
+  width: 8%; /* Status */
+}
+.status-btn {
+  padding: 11px 13px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  background-color: #ffd700;
+  border: none;
+  width: 100%;
+}
+.table-wrapper {
+}
+
+.table-wrapper tbody tr td {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 27px 20px 0px 20px;
+}
+
+.slick-track {
+  height: 100%;
+  padding-bottom: 70px;
+}
+
+.slick-slide.slick-cloned {
+  height: 100%;
+}
+
+.slick-slide img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.description-of-tour {
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.location-of-tour {
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 25px;
+}
+
+.header-button {
+  padding: 14px 30px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  background: linear-gradient(to right, #ffd700 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  transition: background-position 0.9s ease-out, color 0.9s ease-out;
+  width: 73%;
+}
+
+.header-button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.heading-button-div {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+/* Destination page css  */
+
+.destination-section {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 38px;
+  /* position: relative; */
+}
+.main-destination {
+  width: 100%;
+}
+
+.locationCards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 50px 27px;
+  width: 100%;
+}
+
+.locationCard {
+  width: 31.5%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+.location-image {
+  height: 323px;
+  width: 100%;
+}
+.location-image img {
+  height: 100%;
+}
+.location-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.location-image img {
+  width: 100%;
+}
+
+.location-name h6 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  padding-bottom: 15px;
+}
+.boats-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.boat-count-img-div {
+  width: 26px;
+}
+.boat-count-img-div img {
+  width: 100%;
+}
+.boats-count span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0f59ae;
+  font-family: "Urbanist";
+}
+
+/* Tour page css  */
+
+.tour-section {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 74px;
+}
+.main-tour {
+  width: 100%;
+}
+.tour-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.tour-details {
+  width: 67%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 57px 37px;
+}
+.total-tours {
+  width: 33%;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 35px 25px;
+  height: 924px;
+  overflow-y: auto;
+}
+.tour-details h6 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  padding-bottom: 30px;
+}
+.ship-image {
+  width: 100%;
+}
+.ship-image img {
+  width: 100%;
+}
+.ship-description-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.ship-description {
+  width: 70%;
+}
+.ship-description h5 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Urbanist";
+}
+.ship-destination p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.description-of-tour p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.ship-destination {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.ship-details {
+  padding-top: 30px;
+}
+.parameters {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.parameters img {
+  width: 100%;
+}
+
+.parameters p {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  text-wrap: nowrap;
+}
+.destination-img {
+  width: 30px;
+  padding-top: 5px;
+}
+.destination-img img {
+  width: 100%;
+}
+.perhead p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+.tour-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-header h6 {
+  font-size: 40px;
+  font-family: "Urbanist";
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+.all-tours {
+  width: 100%;
+}
+.tour-1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.tour-availibilty-btn {
+  font-size: 18px;
+  font-family: "Urbanist";
+  font-weight: 600;
+  color: #fff;
+  background-color: #ffd700;
+  border: none;
+  padding: 4px 10px;
+}
+.tour-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tour-location-img {
+  width: 84px;
+  height: 74px;
+}
+.tour-location-img img {
+  width: 100%;
+  height: 100%;
+}
+.tour-location-details h6 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Urbanist";
+  color: #0f59ae;
+}
+.tour-location-details p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Urbanist";
+  color: #0f59ae;
+}
+
+/* Add Destination and tour css  */
+
+.add-section {
+  width: 57%;
+  background-color: #0f59ae;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  max-height: 82vh;
+  overflow-y: auto;
+}
+.main-add {
+  padding: 60px 70px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  gap: 50px;
+}
+.upload-img-div {
+  width: 30%;
+  height: 322px;
+  border: 2px dashed #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0px !important;
+  overflow: hidden;
+}
+
+.upload-img-div input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.upload-img-div.label img {
+  width: 40px;
+}
+.form-details-div {
+  width: 70%;
+}
+.main-add h6 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  text-align: center;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-bottom: 30px;
+}
+
+.label input {
+  padding: 18px 10px;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.label select {
+  padding: 18px 10px;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  width: 100%;
+}
+
+.label select option {
+  color: #000;
+}
+.tour-description h3 {
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-weight: 400;
+}
+.label textarea {
+  padding: 18px 10px;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.location-input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.location-input-group button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffd700;
+  background: transparent;
+  color: #ffff;
+  font-size: 18px;
+}
+
+.main-box-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.hello-123 img {
+  object-fit: contain;
+}
+
+.preview-img {
+  /* min-width: 100%;
+  min-height: 100%; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+/* .preview-img-show {
+  width: 100%;
+  height: 100%;
+} */
+.plus-btn {
+  background-color: transparent;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  padding: 10px 68px;
+}
+
+.no-padding {
+  padding-bottom: 40px;
+}
+
+.label label {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  width: 100%;
+}
+.upload-btn {
+  background-color: transparent;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  padding: 10px 68px;
+}
+
+.upload-img-div label {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Urbanist";
+  position: absolute;
+  left: 42%;
+}
+
+.upload-img-div.label .pls-btn {
+  width: 100% !important;
+}
+.select-station-ar.more-paddings {
+  position: relative;
+}
+
+.Ar-code {
+  position: relative;
+  padding: 18px 10px;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.select-Rooms-drop-ar {
+  padding: 18px 10px;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.\30 1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.\30 1 svg {
+  color: #fff;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.\30 1 svg path {
+  stroke: #fff;
+  fill: #fff;
+}
+
+ul.options-list.Rooms-list {
+}
+
+.select-Rooms-drop-ar ul.options-list.Rooms-list {
+  top: 60px;
+}
+.img-label-ar {
+  width: 40%;
+  height: 220px;
+}
+/* Responsiveness  */
+
+@media screen and (max-width: 1600px) {
+  s .side-bar-container-thiviyo {
+    width: 265px;
+    padding: 230px 40px 0px 40px;
+  }
+
+  .fix-side-box {
+    gap: 60px;
+  }
+
+  .side-bar-item-child {
+    gap: 14px;
+    font-size: 18px;
+  }
+
+  .iUNkpW {
+    width: calc(100% - 265px);
+    padding: 0 44px;
+  }
+  .side-nav-pic {
+    width: 30px;
+  }
+
+  /* Dashboard section css  */
+  .dashboard-section {
+    padding-top: 58px;
+  }
+
+  .dashboard-details {
+    gap: 31px;
+  }
+
+  .recent-activities {
+    padding: 18px;
+    max-height: 68vh;
+  }
+  .activities {
+    padding-top: 23px;
+  }
+  .underline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 14px;
+  }
+  .underline h5 {
+    font-size: 30px;
+  }
+
+  .time-div p {
+    font-size: 18px;
+  }
+  .activity-detail-div {
+    gap: 32px;
+    width: 80%;
+    padding-left: 15px;
+  }
+  /* .activity-cicle {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: -2%;
+  } */
+  .activity-detail-div p {
+    font-size: 17px;
+    width: 90%;
+    padding-bottom: 40px;
+  }
+  .activity {
+    gap: 10px;
+  }
+  .dashboard-table-chart {
+    gap: 30px;
+  }
+  .dashboard-table {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .dashboard-table h6 {
+    font-size: 38px;
+    padding-bottom: 19px;
+  }
+  .income-location {
+    width: 27%;
+  }
+
+  .dashboard-location {
+    padding: 28px;
+    max-height: 66vh;
+  }
+  .dashboard-locations {
+    padding-top: 33px;
+  }
+  .location {
+    padding-bottom: 28px;
+  }
+  .location-img {
+    width: 65px;
+  }
+  .location-img-div {
+    width: 70px;
+  }
+  .location-div {
+    gap: 15px;
+  }
+  .location-div p {
+    font-size: 23px;
+  }
+  /* customer section css  */
+  .customer-details-section {
+    padding-top: 58px;
+  }
+
+  .main-heading {
+    padding-bottom: 46px;
+    /* padding-top: 80px; */
+  }
+  .padding-top-ar-dash {
+    padding-top: 80px;
+  }
+  .control-img {
+    width: 40px;
+  }
+  .main-heading h5 {
+    font-size: 38px;
+  }
+
+  .customer-table th {
+    font-size: 24px;
+    padding: 17px 32px;
+  }
+  .customer-table td {
+    padding: 18px 25px;
+    font-size: 23px;
+  }
+  .customer-profile-img {
+    width: 60px;
+  }
+  .Header--end {
+    width: 24%;
+  }
+
+  .profilepic h5 {
+    font-size: 20px;
+  }
+
+  .profilepic img {
+    width: 25%;
+    height: 40px;
+  }
+
+  .profilepic {
+    width: 48%;
+  }
+
+  .bellicon {
+    width: 9%;
+  }
+
+  .commentsicon {
+    width: 9%;
+  }
+  /* Booking section css  */
+  .booking-section {
+    padding-top: 58px;
+  }
+
+  .card {
+    width: 23%;
+    /* padding: 25px 15px;
+    gap: 30px; */
+  }
+  .three-dots {
+    width: 5px;
+  }
+
+  .dashboard-card {
+    width: 32%;
+  }
+
+  .chart-dashboard {
+    padding-top: 30px;
+  }
+
+  .card-details span {
+    font-size: 17px;
+  }
+  .card-details p {
+    font-size: 21px;
+  }
+  .card-value {
+    gap: 15px;
+  }
+  .card-value p {
+    font-size: 17px;
+  }
+  .dash-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .dash-table th {
+    font-size: 18px;
+    padding: 14px;
+    text-align: left;
+  }
+  .dash-table td {
+    padding: 30px 15px;
+    font-size: 23px;
+    text-align: left;
+  }
+
+  .yellow-img {
+    background-color: #ffd700;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .yellow-img img {
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+  }
+  .card-value h6 {
+    font-size: 50px;
+  }
+  .booking-table table {
+    width: 150%;
+  }
+  .booking-table th {
+    font-size: 21px;
+    padding: 22px 20px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .booking-table td {
+    padding: 27px 18px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .status-btn {
+    padding: 10px 12px;
+    font-size: 18px;
+  }
+
+  .header-button {
+    padding: 14px 28px;
+    font-size: 23px;
+  }
+
+  .heading-button-div {
+    gap: 48px;
+    width: 30%;
+  }
+
+  /* Destination page css  */
+
+  .destination-section {
+    padding-top: 140px;
+  }
+
+  .locationCards {
+    gap: 46px 20px;
+  }
+  .location-image {
+    height: 290px;
+  }
+  .location-details {
+    padding: 10px 18px;
+  }
+
+  .location-name h6 {
+    font-size: 23px;
+
+    padding-bottom: 15px;
+  }
+  .boats-count {
+    gap: 8px;
+  }
+  .boat-count-img-div {
+    width: 24px;
+  }
+  .boats-count span {
+    font-size: 18px;
+  }
+
+  /* Tour page css  */
+
+  .tour-section {
+    padding-top: 58px;
+  }
+  /* .tour-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  } */
+  .tour-details {
+    padding: 42px 32px;
+  }
+  .total-tours {
+    padding: 30px 20px;
+    height: 784px;
+  }
+  .tour-details h6 {
+    font-size: 36px;
+    padding-bottom: 24px;
+  }
+  .ship-description-div {
+    padding-top: 18px;
+  }
+  .ship-description {
+    width: 50%;
+  }
+  .ship-description h5 {
+    font-size: 24px;
+  }
+  .ship-destination p {
+    font-size: 21px;
+  }
+
+  .ship-destination {
+    padding-bottom: 18px;
+  }
+  .ship-details {
+    padding-top: 24px;
+  }
+  .parameters img {
+    width: 100%;
+  }
+
+  .parameters p {
+    font-size: 21px;
+  }
+  .destination-img {
+    width: 26px;
+  }
+
+  .perhead p {
+    font-size: 21px;
+  }
+
+  .tour-header h6 {
+    font-size: 36px;
+    padding-bottom: 13px;
+  }
+  /* .tour-1 {
+    padding: 25px 0;
+  } */
+
+  .tour-availibilty-btn {
+    font-size: 17px;
+    padding: 4px 9px;
+  }
+  .tour-location {
+    gap: 10px;
+  }
+  .tour-location-img {
+    width: 80px;
+    height: 70px;
+  }
+  .tour-location-details h6 {
+    font-size: 22px;
+  }
+  .tour-location-details p {
+    font-size: 16px;
+  }
+  /* Add Destination and tour css  */
+
+  .add-section {
+    /* width: 65%; */
+  }
+  .main-add {
+    padding: 55px 65px;
+  }
+
+  .form {
+    padding-top: 55px;
+    gap: 45px;
+  }
+  .upload-img-div {
+    width: 33%;
+    height: 302px;
+    position: relative;
+  }
+  .img-label-ar {
+    width: 45%;
+    height: 230px;
+  }
+
+  .form-details-div {
+    width: 60%;
+  }
+  .main-add h6 {
+    font-size: 45px;
+  }
+  .label {
+    gap: 17px;
+    padding-bottom: 28px;
+  }
+  .label input {
+    padding: 17px 9px;
+    font-size: 19px;
+  }
+
+  .label label {
+    font-size: 23px;
+  }
+  .upload-btn {
+    font-size: 17px;
+    padding: 9px 64px;
+  }
+
+  .upload-img-div label {
+    font-size: 23px;
+  }
+  .booking-chart-buttons {
+    border-radius: 13px;
+    padding: 4px 9px;
+  }
+  .active-tab-dashboard {
+    border-radius: 8px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 18px !important;
+  }
+  ul.options-list li {
+    font-size: 17px !important;
+  }
+  .tour-description h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .side-bar-container-thiviyo {
+  }
+
+  .fix-side-box {
+    gap: 50px;
+  }
+
+  .side-bar-item-child {
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .iUNkpW {
+    width: calc(100% - 250px);
+    padding: 80px 30px 0px 30px;
+  }
+
+  .table-wrapper tbody tr td {
+    font-size: 15px;
+    padding: 25px 12px 0px 12px;
+  }
+  .side-nav-pic {
+    width: 28px;
+  }
+  /* Dashboard section css  */
+  .dashboard-section {
+    padding-top: 56px;
+  }
+
+  .dashboard-details {
+    gap: 29px;
+  }
+
+  .recent-activities {
+    padding: 17px;
+    max-height: 65.5vh;
+  }
+
+  .dash-table th {
+    font-size: 18px;
+  }
+  .activities {
+    padding-top: 22px;
+  }
+  .underline {
+    padding-bottom: 13px;
+  }
+  .underline h5 {
+    font-size: 28px;
+  }
+
+  .time-div p {
+    font-size: 17px;
+  }
+  .activity-detail-div {
+    gap: 30px;
+    width: 79%;
+    padding-left: 15px;
+  }
+  .activity-cicle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: -3%;
+  }
+  .activity-detail-div p {
+    font-size: 16px;
+    width: 90%;
+    padding-bottom: 38px;
+  }
+  .activity {
+    gap: 10px;
+  }
+  .dashboard-table-chart {
+    gap: 28px;
+  }
+  .dashboard-table {
+    width: 70%;
+    padding: 28px;
+    max-height: 66vh;
+  }
+
+  .dashboard-table h6 {
+    font-size: 36px;
+    padding-bottom: 18px;
+  }
+  .income-location {
+    width: 30%;
+  }
+
+  .dashboard-location {
+    padding: 26px;
+    max-height: 85vh;
+  }
+  .padding-top-ar-dash {
+    padding-top: 0px;
+  }
+  .dashboard-locations {
+    padding-top: 31px;
+  }
+  .location {
+    padding-bottom: 26px;
+  }
+  .location-img {
+    width: 70px;
+    height: 50px;
+  }
+  .location-img-div {
+    width: 50px;
+    height: 50px;
+  }
+  .location-div {
+    gap: 14px;
+  }
+  .location-div p {
+    font-size: 16px;
+  }
+
+  /* Customer page s css  */
+
+  .customer-details-section {
+    padding-top: 56px;
+  }
+
+  .main-heading {
+    padding-bottom: 44px;
+  }
+  .control-img {
+    width: 36px;
+  }
+  .main-heading h5 {
+    font-size: 35px;
+  }
+
+  .customer-table th {
+    font-size: 18px;
+    padding: 18px 18px;
+  }
+  .customer-table td {
+    padding: 25px 16px;
+  }
+  .customer-profile-img {
+    width: 55px;
+  }
+  .customer-table td {
+    font-size: 21px;
+  }
+
+  /* Booking section css  */
+  .booking-section {
+    padding-top: 52px;
+  }
+
+  .card {
+    width: 23%;
+    padding: 25px 13px;
+    gap: 25px;
+  }
+  .three-dots {
+    width: 4.5px;
+  }
+  .dashboard-card {
+    width: 31%;
+  }
+
+  .chart-dashboard {
+    padding-top: 28px;
+  }
+
+  .card-details span {
+    font-size: 15px;
+  }
+  .card-details p {
+    font-size: 19px;
+  }
+  .card-value {
+    gap: 10px;
+  }
+  .card-value p {
+    font-size: 16px;
+  }
+
+  .dash-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .dash-table th {
+    font-size: 21px;
+    padding: 14px 14px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .dash-table td {
+    padding: 25px 14px;
+    font-size: 20px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  */ .yellow-img {
+    background-color: #ffd700;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  .yellow-img img {
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+  }
+  .card-value h6 {
+    font-size: 44px;
+  }
+
+  .booking-table th {
+    font-size: 16px;
+    padding: 25px 15px;
+    /* text-align: left;
+    text-wrap: nowrap; */
+  }
+  .booking-table td {
+    padding: 25px 18px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .status-btn {
+    padding: 9px 10px;
+    font-size: 16px;
+  }
+
+  .header-button {
+    padding: 14px 26px;
+    font-size: 22px;
+  }
+
+  .heading-button-div {
+    gap: 44px;
+  }
+
+  /* Destination page css  */
+
+  /* .destination-section {
+    width: 100%;
+    padding-top: 60px;
+    position: relative;
+  } */
+
+  .destination-section {
+    padding-top: 44px;
+  }
+
+  .location-image {
+    height: 283px;
+  }
+  .locationCards {
+    gap: 42px 20px;
+  }
+
+  .location-details {
+    padding: 9px 16px;
+  }
+
+  .location-name h6 {
+    font-size: 21px;
+    padding-bottom: 14px;
+  }
+  .boats-count {
+    gap: 8px;
+  }
+  .boat-count-img-div {
+    width: 22px;
+  }
+  .boats-count span {
+    font-size: 17px;
+  }
+  /* Tour page css  */
+
+  .tour-section {
+    padding-top: 44px;
+  }
+  /* .tour-card {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    } */
+  .tour-details {
+    padding: 47px 27px;
+  }
+  .total-tours {
+    padding: 30px 20px;
+    height: 746px;
+  }
+  .tour-details h6 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .ship-description-div {
+    padding-top: 17px;
+  }
+  .ship-description {
+    width: 70%;
+  }
+  .description-of-tour {
+    padding-top: 30px;
+  }
+  .ship-description h5 {
+    font-size: 22px;
+  }
+  .ship-destination p {
+    font-size: 18px;
+    /* padding-top: 7px; */
+  }
+  .description-of-tour p {
+    font-size: 16px;
+  }
+  .ship-destination {
+    padding-bottom: 17px;
+    gap: 10px;
+  }
+  .ship-details {
+    padding-top: 26px;
+  }
+  /* .parameters {
+      gap: 10px;
+    } */
+
+  .parameters p {
+    font-size: 17px;
+  }
+  .destination-img {
+    width: 26px;
+  }
+
+  .perhead p {
+    font-size: 20px;
+  }
+
+  .tour-header h6 {
+    font-size: 32px;
+  }
+  /* .tour-1 {
+      padding: 25px 0;
+    } */
+
+  .tour-availibilty-btn {
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+  .tour-location {
+    gap: 9px;
+  }
+  .tour-location-img {
+    width: 75px;
+    height: 65px;
+  }
+  .tour-location-details h6 {
+    font-size: 18px;
+  }
+  .tour-location-details p {
+    font-size: 14px;
+  }
+  /* Add Destination and tour css  */
+
+  .add-section {
+    /* width: 65%;
+    top: 5%; */
+  }
+  .main-add {
+    padding: 50px 60px;
+  }
+
+  .form {
+    padding-top: 50px;
+    gap: 35px;
+  }
+  .upload-img-div {
+    width: 40%;
+    height: 284px;
+    position: relative;
+  }
+  .img-label-ar {
+    height: 230px;
+    width: 50%;
+  }
+
+  .form-details-div {
+    width: 60%;
+  }
+  .main-add h6 {
+    font-size: 40px;
+  }
+  .label {
+    gap: 16px;
+    padding-bottom: 26px;
+  }
+  .label input {
+    padding: 16px 8px;
+    font-size: 17px;
+  }
+
+  .label label {
+    font-size: 21px;
+  }
+  .upload-btn {
+    font-size: 16px;
+    padding: 9px 60px;
+  }
+
+  .upload-img-div label {
+    font-size: 21px;
+  }
+
+  .dash-table th {
+    font-size: 18px;
+  }
+  .booking-chart-buttons {
+    border-radius: 12px;
+    padding: 6px 8px;
+  }
+  .active-tab-dashboard {
+    border-radius: 8px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 18px !important;
+  }
+  ul.options-list li {
+    font-size: 16px !important;
+  }
+  .tour-description h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .recent-activities {
+    max-height: 62.5vh;
+  }
+  .booking-chart-buttons {
+    border-radius: 10px;
+    padding: 2px 7px;
+  }
+  .active-tab-dashboard {
+    border-radius: 7px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .dashboard-location {
+    max-height: 66vh;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 17px !important;
+  }
+  ul.options-list li {
+    font-size: 16px !important;
+  }
+  .tour-description h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .side-bar-container-thiviyo {
+    width: 250px;
+    padding: 110px 30px;
+  }
+
+  .fix-side-box {
+    gap: 40px;
+  }
+
+  .side-bar-item-child {
+    gap: 10px;
+    font-size: 17px;
+  }
+
+  .iUNkpW {
+    width: calc(100% - 250px);
+  }
+  .side-nav-pic {
+    width: 22px;
+  }
+
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(80px, 55px) !important;
+  }
+  /* Dashboard section css  */
+  .dashboard-section {
+    padding-top: 0px;
+  }
+  .Dash--Header--main {
+    padding: 12px 30px;
+  }
+  .dashboard-details {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .recent-activities {
+    padding: 15px;
+    overflow-x: auto;
+    width: 100%;
+    max-height: 40vh;
+  }
+  .activities {
+    padding-top: 18px;
+  }
+  .underline {
+    padding-bottom: 11px;
+  }
+  .underline h5 {
+    font-size: 22px;
+  }
+
+  .time-div p {
+    font-size: 15px;
+  }
+  .activity-detail-div {
+    gap: 26px;
+    width: 92%;
+    padding-left: 13px;
+  }
+  .activity-cicle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -1%;
+  }
+  .activity-detail-div p {
+    font-size: 14px;
+    width: 90%;
+    padding-bottom: 36px;
+  }
+  .activity {
+    gap: 10px;
+  }
+  .cards-chart {
+    width: 100%;
+  }
+  .dashboard-table-chart {
+    gap: 24px;
+    flex-direction: column;
+  }
+  .dashboard-table {
+    width: 100%;
+    padding: 24px;
+    max-height: 50vh;
+  }
+
+  .dashboard-table h6 {
+    font-size: 22px;
+    padding-bottom: 14px;
+  }
+  .income-location {
+    width: 100%;
+    display: flex;
+  }
+  .tour-description h3 {
+    font-size: 15px;
+  }
+
+  .dashboard-location {
+    padding: 10px;
+    width: 100%;
+    max-height: 50vh;
+  }
+  .dashboard-locations {
+    padding-top: 27px;
+  }
+  .location {
+    padding-bottom: 20px;
+  }
+  .location-img {
+    width: 68px;
+  }
+  .location-img-div {
+    width: 58px;
+  }
+  .location-div {
+    gap: 8px;
+  }
+  .location-div p {
+    font-size: 14px;
+  }
+
+  /* Customer page s css  */
+
+  .customer-details-section {
+    padding-top: 44px;
+  }
+  .customer-table table {
+    width: 100%;
+  }
+
+  .main-heading {
+    padding-bottom: 36px;
+  }
+  .control-img {
+    width: 28px;
+  }
+  .main-heading h5 {
+    font-size: 28px;
+  }
+
+  .customer-table th {
+    font-size: 16px;
+    padding: 16px 23px;
+    text-wrap: nowrap;
+  }
+  .customer-table td {
+    padding: 17px 23px;
+    text-wrap: nowrap;
+    font-size: 16px;
+  }
+  .customer-profile-img {
+    width: 55px;
+  }
+  /* Booking section css  */
+  .booking-section {
+    padding-top: 44px;
+  }
+
+  .card {
+    width: 22.5%;
+    padding: 8px 6px;
+    gap: 30px;
+  }
+  .three-dots {
+    width: 3.5px;
+  }
+
+  .dashboard-card {
+    width: 30%;
+    padding: 15px 20px;
+  }
+
+  .chart-dashboard {
+    padding-top: 26px;
+  }
+
+  .card-details span {
+    border: none;
+    display: block;
+    padding: 0;
+    font-size: 13px;
+  }
+  .card-details p {
+    font-size: 16px;
+  }
+  .card-value {
+    gap: 9px;
+  }
+  .card-value p {
+    font-size: 13px;
+  }
+
+  .dash-table th {
+    font-size: 16px;
+    padding: 13px 13px;
+  }
+  .dash-table td {
+    padding: 22px 13px;
+    font-size: 16px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .yellow-img {
+    background-color: #ffd700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .yellow-img img {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+  }
+  .card-value h6 {
+    font-size: 32px;
+  }
+
+  .booking-table th {
+    font-size: 16px;
+    padding: 18px 17px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .booking-table td {
+    padding: 22px 14px;
+    text-align: left;
+    font-size: 16px;
+    text-wrap: nowrap;
+  }
+
+  .status-btn {
+    padding: 8px 9px;
+    font-size: 15px;
+  }
+  .header-button {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  .heading-button-div {
+    gap: 26px;
+    width: 35%;
+  }
+  /* Destination page css  */
+
+  /* .destination-section {
+    width: 100%;
+    padding-top: 60px;
+    position: relative;
+  } */
+
+  .destination-section {
+    padding-top: 40px;
+    padding-left: 0 !important;
+    padding-right: 0px !important;
+  }
+
+  .location-image {
+    height: 203px;
+  }
+  .locationCards {
+    gap: 38px 20px;
+  }
+  .locationCard {
+    width: 30%;
+  }
+  .location-details {
+    padding: 7px 12px;
+  }
+
+  .location-name h6 {
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+  .boats-count {
+    gap: 7px;
+  }
+  .boat-count-img-div {
+    width: 18px;
+  }
+  .boats-count span {
+    font-size: 15px;
+  }
+  /* Tour page css  */
+
+  .tour-section {
+    padding-top: 44px;
+  }
+  .tour-card {
+    gap: 16px;
+  }
+  .tour-details {
+    padding: 42px 22px;
+  }
+  .total-tours {
+    padding: 26px 12px;
+    height: 568px;
+  }
+  .tour-details h6 {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+  .ship-description-div {
+    padding-top: 16px;
+  }
+  .ship-description {
+    width: 60%;
+  }
+  .ship-description h5 {
+    font-size: 15px;
+  }
+  .ship-destination p {
+    font-size: 14px;
+  }
+
+  .ship-destination {
+    padding-bottom: 16px;
+    gap: 10px;
+  }
+  .ship-details {
+    padding-top: 24px;
+  }
+  /* .parameters {
+          gap: 10px;
+        } */
+  .parameters img {
+    width: 100%;
+  }
+
+  .parameters p {
+    font-size: 14px;
+  }
+  .destination-img {
+    width: 18px;
+  }
+
+  .perhead p {
+    font-size: 14px;
+  }
+
+  .tour-header h6 {
+    font-size: 26px;
+  }
+  /* .tour-1 {
+          padding: 25px 0;
+        } */
+
+  .tour-availibilty-btn {
+    font-size: 12px;
+    padding: 4px 3px;
+  }
+  .tour-location {
+    gap: 6px;
+  }
+  .tour-location-img {
+    width: 60px;
+    height: 50px;
+  }
+  .tour-location-details h6 {
+    font-size: 14px;
+  }
+  .tour-location-details p {
+    font-size: 12px;
+  }
+  /* Add Destination and tour css  */
+
+  .add-section {
+    /* width: 60%;
+    top: 5%; */
+    max-height: 64vh;
+    top: 19%;
+    left: 34%;
+  }
+
+  .main-add {
+    padding: 35px 0px;
+  }
+  .label select {
+    padding: 14px 9px;
+    font-size: 15px;
+}
+
+.upload-img-div {
+    height: 145px;
+}
+  .form {
+    padding-top: 40px;
+    gap: 30px;
+  }
+  .upload-img-div {
+    width: 35%;
+    height: 234px;
+    position: relative;
+  }
+  .img-label-ar {
+    width: 60%;
+    height: 200px;
+  }
+
+  .form-details-div {
+    width: 65%;
+  }
+  .main-add h6 {
+    font-size: 30px;
+  }
+  .label {
+    gap: 12px;
+    padding-bottom: 22px;
+  }
+  .label input {
+    padding: 14px 6px;
+    font-size: 15px;
+  }
+
+  .label label {
+    font-size: 17px;
+  }
+  .upload-btn {
+    font-size: 13px;
+    padding: 8px 50px;
+  }
+
+  .upload-img-div label {
+    font-size: 17px;
+    left: 36%;
+  }
+  .padding-top-ar-dash {
+    padding-top: 40px;
+  }
+  .booking-chart-buttons {
+    border-radius: 8px;
+    padding: 8px 6px;
+  }
+  .active-tab-dashboard {
+    border-radius: 6px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .time-div {
+    width: 14% !important;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 15px !important;
+  }
+  ul.options-list li {
+    font-size: 14px !important;
+  }
+  .tour-description h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .side-bar-container-thiviyo {
+    width: 200px;
+    padding: 100px 20px;
+    z-index: 2;
+  }
+
+  .fix-side-box {
+    gap: 40px;
+  }
+
+  .side-bar-item-child {
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .iUNkpW {
+    width: calc(100% - 200px);
+  }
+  .side-nav-pic {
+    width: 20px;
+  }
+  /* Dashboard section css  */
+  .dashboard-section {
+    /* padding-top: 44px; */
+  }
+
+  .dashboard-details {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .cards-chart {
+    width: 100%;
+  }
+  .recent-activities {
+    padding: 20px;
+    width: 100%;
+    max-height: 45vh;
+  }
+  .activities {
+    padding-top: 18px;
+  }
+  .underline {
+    padding-bottom: 11px;
+  }
+  .underline h5 {
+    font-size: 20px;
+  }
+
+  .time-div p {
+    font-size: 13px;
+  }
+  .activity-detail-div {
+    gap: 26px;
+    width: 86%;
+    padding-left: 13px;
+  }
+  .activity-cicle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: -1%;
+  }
+  .time-div {
+    width: 12% !important;
+  }
+  .activity-detail-div p {
+    font-size: 13px;
+    width: 90%;
+    padding-bottom: 36px;
+  }
+  .activity {
+    gap: 10px;
+  }
+  .dashboard-table-chart {
+    gap: 24px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .dashboard-table {
+    width: 100%;
+    padding: 24px;
+    max-height: 52vh;
+  }
+
+  .dashboard-table h6 {
+    font-size: 20px;
+    padding-bottom: 14px;
+  }
+  .income-location {
+    width: 100%;
+    display: flex;
+  }
+
+  .dashboard-location {
+    padding: 10px;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 52vh;
+  }
+  .dashboard-locations {
+    padding-top: 27px;
+  }
+  .location {
+    padding-bottom: 20px;
+  }
+
+  .location-img {
+    width: 52px;
+  }
+  .location-img-div {
+    width: 42px;
+  }
+
+  .location-div {
+    gap: 10px;
+  }
+  .location-div p {
+    font-size: 13px;
+  }
+
+  /* Customer page s css  */
+
+  .customer-details-section {
+    padding-top: 44px;
+  }
+  .customer-table table {
+    width: 100%;
+  }
+
+  .main-heading {
+    padding-bottom: 36px;
+  }
+  .control-img {
+    width: 24px;
+  }
+  .main-heading h5 {
+    font-size: 24px;
+  }
+
+  .customer-table th {
+    font-size: 15px;
+    padding: 15px 23px;
+    /* text-align: center; */
+    text-wrap: nowrap;
+  }
+  .customer-table td {
+    padding: 16px 23px;
+    font-size: 15px;
+  }
+  .customer-profile-img {
+    width: 50px;
+  }
+
+  /* Booking section css  */
+  .booking-section {
+    padding-top: 44px;
+  }
+
+  .card {
+    width: 22.5%;
+    padding: 10px 8px;
+    gap: 22px;
+  }
+  .three-dots {
+    width: 3.5px;
+  }
+
+  .dashboard-card {
+    width: 30%;
+  }
+
+  .chart-dashboard {
+    padding-top: 26px;
+  }
+
+  .card-details span {
+    border: none;
+    display: block;
+    padding: 0;
+    font-size: 12px;
+  }
+  .card-details p {
+    font-size: 14px;
+  }
+  .card-value {
+    gap: 9px;
+  }
+  .card-value p {
+    font-size: 12px;
+  }
+
+  .dash-table th {
+    font-size: 15px;
+    padding: 13px 13px;
+  }
+  .dash-table td {
+    padding: 20px 13px;
+    font-size: 15px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .yellow-img {
+    background-color: #ffd700;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+  }
+  .yellow-img img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  .card-value h6 {
+    font-size: 28px;
+  }
+
+  .booking-table th {
+    font-size: 15px;
+    padding: 17px 16px;
+  }
+  .booking-table td {
+    padding: 20px 13px;
+    text-align: left;
+    font-size: 15px;
+    text-wrap: nowrap;
+  }
+
+  .status-btn {
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+  .header-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .heading-button-div {
+    gap: 25px;
+  }
+  /* Destination page css  */
+
+  .destination-section {
+    padding-top: 0px;
+  }
+  .locationCards {
+    gap: 30px 0;
+    justify-content: space-between;
+  }
+  .locationCard {
+    width: 48%;
+    gap: 10px;
+  }
+
+  .location-details {
+    padding: 7px 10px;
+  }
+
+  .location-name h6 {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+  .boats-count {
+    gap: 5px;
+  }
+  .boat-count-img-div {
+    width: 16px;
+  }
+  .boats-count span {
+    font-size: 14px;
+  }
+  /* Tour page css  */
+
+  .tour-section {
+    padding-top: 44px;
+  }
+  .tour-card {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour-details {
+    padding: 36px 22px;
+    width: 100%;
+  }
+  .total-tours {
+    padding: 36px 36px;
+    width: 80%;
+    height: 510px;
+  }
+  .tour-details h6 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .ship-description-div {
+    padding-top: 18px;
+  }
+  .ship-description {
+    width: 65%;
+  }
+  .ship-description h5 {
+    font-size: 14px;
+  }
+  .ship-destination p {
+    font-size: 13px;
+  }
+
+  .ship-destination {
+    padding-bottom: 11px;
+    gap: 10px;
+  }
+  .ship-details {
+    padding-top: 24px;
+  }
+
+  .parameters p {
+    font-size: 13px;
+  }
+  .destination-img {
+    width: 18px;
+  }
+
+  .perhead p {
+    font-size: 13px;
+  }
+
+  .tour-header h6 {
+    font-size: 24px;
+  }
+  /* .tour-1 {
+          padding: 25px 0;
+        } */
+
+  .tour-availibilty-btn {
+    font-size: 12px;
+    padding: 4px 5px;
+  }
+  .tour-location {
+    gap: 16px;
+  }
+  .tour-location-img {
+    width: 60px;
+    height: 50px;
+  }
+  .tour-location-details h6 {
+    font-size: 14px;
+  }
+  .tour-location-details p {
+    font-size: 12px;
+  }
+  /* Add Destination and tour css  */
+
+  .add-section {
+    width: 50%;
+    top: 18%;
+    left: 24%;
+  }
+  .main-add {
+    padding: 35px 0px;
+  }
+
+  .form {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .upload-img-div {
+    width: 28%;
+    height: 130px;
+    position: relative;
+}
+  .form-details-div {
+    width: 100%;
+  }
+  .main-add h6 {
+    font-size: 25px;
+  }
+  .label {
+    gap: 12px;
+    padding-bottom: 22px;
+  }
+  .label input {
+    padding: 12px 6px;
+    font-size: 14px;
+  }
+
+  .label label {
+    font-size: 15px;
+  }
+  .upload-btn {
+    font-size: 12px;
+    padding: 8px 40px;
+  }
+  .img-label-ar {
+    width: 50%;
+    height: 150px;
+  }
+
+  .upload-img-div label {
+    font-size: 15px;
+    left: 41%;
+  }
+  .booking-chart-buttons {
+    border-radius: 6px;
+    padding: 7px 5px;
+  }
+  .active-tab-dashboard {
+    border-radius: 5px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+  .padding-top-ar-dash {
+    padding-top: 0px;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 14px !important;
+  }
+  ul.options-list li {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .add-section {
+    width: 83%;
+    top: 22%;
+    left: 9%;
+    max-height: 71vh;
+  }
+
+  .main-add {
+    padding: 35px 0px;
+    height: 100%;
+    /* overflow-y: scroll; */
+  }
+
+  .side-bar-container-thiviyo {
+    padding: 100px 30px;
+    position: fixed;
+    width: 224px;
+    z-index: 999;
+    margin-top: 20px;
+  }
+  .Obssesion-img button.slick-arrow.slick-prev {
+    left: 11px;
+}
+
+.Obssesion-img button.slick-arrow.slick-next {
+    right: 11px;
+}
+  .side-bar-container-thiviyo {
+    padding: 100px 30px;
+    position: fixed;
+    width: 224px;
+    z-index: 999;
+  }
+
+  .fix-side-box {
+    gap: 35px;
+  }
+
+  .side-bar-item-child {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .iUNkpW {
+    width: 100%;
+    padding: 0 18px;
+    /* position: relative; */
+  }
+  .side-nav-pic {
+    width: 20px;
+  }
+  /* Dashboard section css  */
+  .dashboard-section {
+    /* padding-top: 40px; */
+  }
+
+  .dashboard-details {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .cards-chart {
+    width: 100%;
+  }
+  .recent-activities {
+    padding: 20px;
+    width: 100%;
+  }
+  .activities {
+    padding-top: 16px;
+  }
+  .underline {
+    padding-bottom: 11px;
+  }
+  .underline h5 {
+    font-size: 18px;
+  }
+
+  .time-div p {
+    font-size: 12px;
+  }
+  .activity-detail-div {
+    gap: 26px;
+    width: 88%;
+    padding-left: 13px;
+  }
+  .activity-cicle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: -2%;
+  }
+  .activity-detail-div p {
+    font-size: 13px;
+    width: 90%;
+    padding-bottom: 36px;
+  }
+  .activity {
+    gap: 10px;
+  }
+  .dashboard-table-chart {
+    gap: 24px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .dashboard-table {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .dashboard-table h6 {
+    font-size: 18px;
+    padding-bottom: 14px;
+  }
+  .income-location {
+    width: 100%;
+    display: flex;
+  }
+
+  .dashboard-location {
+    padding: 10px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  .dashboard-locations {
+    padding-top: 27px;
+  }
+  .location {
+    padding-bottom: 20px;
+  }
+  .location-div {
+    gap: 10px;
+  }
+  .location-img {
+    width: 44px;
+  }
+  .location-img-div {
+    width: 38px;
+  }
+  .location-div p {
+    font-size: 12px;
+  }
+
+  /* Customer page s css  */
+
+  .customer-details-section {
+    padding-top: 40px;
+  }
+  .customer-table table {
+    width: 120%;
+    /* max-width: 600px; */
+    overflow: auto;
+  }
+
+  .main-heading {
+    padding-bottom: 30px;
+  }
+  .control-img {
+    width: 22px;
+  }
+  .main-heading h5 {
+    font-size: 22px;
+  }
+
+  .customer-table th {
+    font-size: 14px;
+    padding: 14px 22px;
+    /* text-align: center; */
+    text-wrap: nowrap;
+  }
+  .customer-table td {
+    padding: 15px 22px;
+    font-size: 14px;
+  }
+  .customer-profile-img {
+    width: 45px;
+  }
+  /* Booking section css  */
+  .booking-section {
+    padding-top: 40px;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 5px;
+  }
+
+  .card {
+    width: 45%;
+    padding: 10px 8px;
+    gap: 20px;
+  }
+  .three-dots {
+    width: 3px;
+  }
+
+  .dashboard-card {
+    width: 30%;
+  }
+
+  .chart-dashboard {
+    padding-top: 27px;
+  }
+
+  .card-details span {
+    border: none;
+    display: block;
+    padding: 0;
+    font-size: 12px;
+  }
+  .card-details p {
+    font-size: 12px;
+  }
+  .card-value {
+    gap: 10px;
+  }
+  .card-value p {
+    font-size: 11px;
+    text-wrap: nowrap;
+  }
+  .dash-table table {
+    width: 100% !important;
+  }
+  .dash-table th {
+    font-size: 14px;
+    padding: 12px 12px;
+  }
+  .dash-table td {
+    padding: 18px 12px;
+    font-size: 14px;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+  .dash-table th:nth-child(1),
+  .dash-table td:nth-child(1) {
+    width: 10% !important; /* Location column (with image and text) */
+    /* text-align: left; */
+  }
+
+  .dash-table th:nth-child(2),
+  .dash-table td:nth-child(2) {
+    width: 10%; /* Duration */
+  }
+
+  .dash-table th:nth-child(3),
+  .dash-table td:nth-child(3) {
+    width: 25%; /* Available Seats */
+  }
+
+  .dash-table th:nth-child(4),
+  .dash-table td:nth-child(4) {
+    width: 20%; /* Price */
+  }
+  .yellow-img {
+    background-color: #ffd700;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .yellow-img img {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+  }
+  .card-value h6 {
+    font-size: 22px;
+  }
+
+  .booking-table th {
+    font-size: 14px;
+    padding: 16px 16px;
+  }
+  .booking-table td {
+    padding: 18px 12px;
+    text-align: left;
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+
+  .status-btn {
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+  .header-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .heading-button-div {
+    gap: 20px;
+    width: 55%;
+  }
+  /* Destination page css  */
+
+  .destination-section {
+    padding-top: 25px;
+  }
+  .locationCards {
+    gap: 30px 0;
+  }
+  .locationCard {
+    width: 48%;
+    gap: 10px;
+  }
+
+  .location-details {
+    padding: 7px 10px;
+  }
+
+  .location-name h6 {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+  .boats-count {
+    gap: 5px;
+  }
+  .boat-count-img-div {
+    width: 15px;
+  }
+  .boats-count span {
+    font-size: 14px;
+  }
+  /* Tour page css  */
+
+  .tour-section {
+    padding-top: 44px;
+  }
+  .tour-card {
+    gap: 30px;
+  }
+  .tour-details {
+    padding: 34px 14px;
+    width: 100%;
+  }
+  .total-tours {
+    padding: 36px 25px;
+    width: 90%;
+    height: 466px;
+  }
+  .tour-details h6 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  /* .ship-description-div {
+          padding: 20px 0;
+        } */
+  .ship-description {
+    width: 65%;
+  }
+  .ship-description h5 {
+    font-size: 13px;
+  }
+  .ship-destination p {
+    font-size: 12px;
+  }
+  ul.slick-dots {
+    display: none !important;
+  }
+  .ship-destination {
+    padding: 5px 0;
+    gap: 5px;
+  }
+
+  .slick-track {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .ship-details {
+    padding-top: 24px;
+    width: 235px;
+  }
+
+  .parameters p {
+    font-size: 12px;
+  }
+  .destination-img {
+    width: 16px;
+  }
+
+  .perhead p {
+    font-size: 12px;
+  }
+
+  .tour-header h6 {
+    font-size: 22px;
+  }
+  /* .tour-1 {
+          padding: 25px 0;
+        } */
+
+  .tour-availibilty-btn {
+    font-size: 12px;
+    padding: 4px 5px;
+  }
+  .tour-location {
+    gap: 10px;
+  }
+  .tour-location-img {
+    width: 55px;
+    height: 45px;
+  }
+  .tour-location-details h6 {
+    font-size: 15px;
+  }
+  .tour-location-details p {
+    font-size: 12px;
+  }
+  /* Add Destination and tour css  */
+
+  .upload-img-div {
+    width: 55%;
+    height: 160px;
+    position: relative;
+  }
+  .img-label-ar {
+    width: 45%;
+    height: 150px;
+  }
+
+  .form-details-div {
+    width: 100%;
+  }
+  .main-add h6 {
+    font-size: 20px;
+  }
+
+  .label select {
+    padding: 11px 9px;
+    font-size: 12px;
+}
+
+.addtourform {
+    padding-top: 30px;
+}
+
+
+  .label {
+    gap: 12px;
+    padding-bottom: 22px;
+  }
+  .label input {
+    padding: 11px 5px;
+    font-size: 12px;
+  }
+
+  .label label {
+    font-size: 13px;
+  }
+  .upload-btn {
+    font-size: 12px;
+    padding: 7px 30px;
+  }
+
+  .upload-img-div label {
+    font-size: 13px;
+  }
+  .booking-chart-buttons {
+    border-radius: 5px;
+    padding: -1px 4px;
+    margin-bottom: 20px;
+  }
+  .active-tab-dashboard {
+    border-radius: 4px !important;
+  }
+  .booking-chart-buttons button {
+    padding: 0px 6px;
+    font-size: 10px;
+  }
+  .chart-heading .card-details p {
+    font-size: 25px;
+  }
+  .padding-top-ar-dash {
+    padding-top: 25px;
+  }
+  .select-Rooms-drop-ar {
+    font-size: 12px !important;
+  }
+  ul.options-list li {
+    font-size: 12px !important;
+  }
+  .tour-description h3 {
+    font-size: 12px;
+  }
+}

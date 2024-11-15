@@ -1,0 +1,5527 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../src/font/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../src/font/Urbanist-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f59ae;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f59ae;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+#google_translate_element {
+  border: 1px solid black; /* Just to visualize the element */
+  padding: 10px;
+  margin: 10px;
+}
+
+.Dash--Header--main {
+  position: fixed;
+  background: #0f59ae;
+  box-shadow: 0px 4px 14px 0px #00000040;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 13px 52px;
+  justify-content: space-between;
+  z-index: 999;
+}
+select.goog-te-combo {
+  background: transparent;
+  border: none;
+  color: #ffd700;
+}
+
+.goog-te-gadget .goog-te-combo option {
+  color: #000;
+}
+
+.Header--center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 68px;
+  width: 53%;
+}
+.form-checkout-container {
+  width: 60%;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.Header--end {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 22%;
+  position: relative;
+}
+.buttons-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.logoHeader {
+  width: 5%;
+  height: 100%;
+}
+
+.logoHeader img {
+  width: 100%;
+  height: 100%;
+}
+
+.Dash--Header--main img {
+  width: 100%;
+}
+
+.profilepic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+
+.profilepic img {
+  width: 30%;
+  height: 67px;
+}
+
+.profilepic h5 {
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 33.32px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.togglebuttonHeader {
+  cursor: pointer;
+  width: 5%;
+  height: 28px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchbar input {
+  cursor: pointer;
+  width: 432px;
+  height: 45px;
+  padding: 13px 60px 13px 10px;
+  border: 1px;
+  border: 1px solid #e8a73f;
+  background-color: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Urbanist";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.searchbar input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.searchbar img {
+  cursor: pointer;
+  width: 20px;
+  position: relative;
+  right: 42px;
+}
+.checkoutContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.commentsicon {
+  cursor: pointer;
+  width: 10%;
+  height: 35.36px;
+}
+
+.bellicon {
+  cursor: pointer;
+  width: 10%;
+  height: 37px;
+}
+
+.dropdownHeader {
+  cursor: pointer;
+  width: 5%;
+  height: 12px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+nav.nav-1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-logo {
+  width: 16%;
+  border-right: 1px solid #fff;
+  padding: 20px 0px;
+  height: 100%;
+}
+.checkoutbtn button {
+  background: #ffd700;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 8px;
+  width: 120px;
+}
+.nav-box {
+  width: 84%;
+  height: 100%;
+}
+
+.nav-list-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 20px 40px;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-list-1-contact {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.nav-list-1-logout {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.nav-list-1-contact span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-list-1-logout span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-list-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-logo img {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-list-2 ul li {
+  cursor: pointer;
+  list-style: none;
+  padding: 40px 40px 32px 40px;
+  border-right: 1px solid #fff;
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.nav-list-2 ul li:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+.nav-list-1-contact span p {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav-list-1-logout span p {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav-list-1-contact span svg {
+  width: 25px;
+  height: 25px;
+  fill: #ffd700;
+}
+
+.nav-list-1-logout span svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffd700;
+}
+
+section.landing-hero {
+  width: 100%;
+  height: 100vh;
+  padding: 335px 0px 200px 0px;
+  background-image: url(../src/assets/Images/donutblack.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.land1 {
+  background-image: url(../src/assets/Images/newp2.png) !important;
+}
+
+.land2 {
+  background-image: url(../src/assets/Images/newp3.png) !important;
+}
+.Charter-video video {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.time-div {
+  width: 34%;
+}
+.main-hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+section.Booking {
+  width: 100%;
+  background: #0f59ae;
+  padding: 90px 0px;
+  background-image: url(../src/assets/Images/booking-bg.png);
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-Booking {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Booking-tital {
+  width: 24%;
+}
+
+.Booking-tital h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 108.75% */
+}
+
+.Booking-tital p {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 40px;
+}
+
+.Booking-in-box {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 0px;
+}
+
+.loction-in {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dution-in {
+  width: 48%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-station-drop {
+  width: 100%;
+  border: 1px solid #ffd700;
+  padding: 28px;
+  position: relative;
+  padding-left: 80px;
+  cursor: pointer;
+}
+
+span.selected-option {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.select-tv-icon {
+  width: 100%;
+}
+
+.select-container {
+  width: 100%;
+  position: relative;
+  z-index: 40;
+}
+
+ul.options-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  border: 1px solid #fff;
+  top: 90px;
+  z-index: 999;
+}
+
+ul.options-list li {
+  color: #0f59ae;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ul.options-list li:hover {
+  color: #0f59ae;
+}
+
+/* From Uiverse.io by abrahamcalsin */
+button.hover-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ffd700;
+}
+
+button.hover-btn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button.hover-btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button.hover-btn span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 14px 34px;
+  /* z-index: 2; */
+  transition: all 0.3s ease-in-out;
+  color: #ffd700;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button.hover-btn:hover span {
+  color: #fff;
+  animation: scaleUp 0.3s ease-in-out;
+  z-index: 999;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.select-station-drop .react-datepicker__input-container {
+  width: 100%;
+  height: 100%;
+}
+
+.select-station-drop .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.select-station-drop .react-datepicker__input-container input {
+  width: 100%;
+  position: absolute;
+  top: -40px;
+  padding: 25px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.select-station-drop input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.select-station-drop input {
+  width: 100%;
+  top: -40px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon-bg {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 20px;
+}
+
+.icon-bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.drop-icon {
+  position: absolute;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+section.Destination {
+  width: 100%;
+  padding: 100px 0px 190px 0px;
+}
+
+.main-Destination {
+  width: 100%;
+}
+
+.Destination-h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.Destination-h2 h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 108.75% */
+}
+
+.Destination-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.Destination-main-box {
+  width: 32%;
+}
+
+.Destination-card {
+  width: 100%;
+  height: 74vh;
+  position: relative;
+}
+
+.Destination-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.Destination-card-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.Destination-card-hover {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #e9b03d 0%, #e9b03d 100%),
+    url(<path-to-image>) lightgray -127.974px 0px / 198.624% 100% no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 35px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.Destination-card-hover img {
+  width: 44%;
+}
+
+.Destination-card-hover h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.line-box {
+  width: 2px;
+  height: 12vh;
+  background-color: #fff;
+}
+
+.Destination-card-hover button {
+  border: 3px solid #fff;
+  background: transparent;
+  padding: 18px 45px;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Destination-card:hover .Destination-card-hover {
+  opacity: 1;
+}
+
+.Destination-main-box p {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding-top: 20px;
+}
+
+section.Tours {
+  width: 100%;
+  background-color: #0f59ae;
+  padding: 70px 0px 90px 0px;
+  background-image: url(../src/assets//Images/Tours-bg.png);
+  background-position: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+
+.main-Tours {
+  width: 100%;
+}
+
+.Tours-tital {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Tours-in-box {
+  width: 28%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Tours-tital h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 108.75% */
+}
+
+.Tours-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+
+.Tours-card {
+  width: 24%;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  height: 58vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Tours-card-img {
+  width: 100%;
+  padding: 14px;
+}
+
+.Tours-card-img img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.Tours-card-img img {
+  width: 100%;
+}
+
+.Tours-box-Tours {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+.Tours-card-tital {
+  width: 100%;
+  padding: 0px 25px;
+  height: 32vh;
+  overflow-y: auto;
+}
+
+.Tours-card-tital h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* text-transform: lowercase; */
+  padding-bottom: 24px;
+}
+
+span.Duration {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+span.Duration svg {
+  width: 24px;
+  height: 24px;
+}
+
+span.Duration p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 90%;
+}
+
+.Obssesion-img img {
+  height: 70vh;
+  object-fit: unset;
+}
+.Seats-box {
+  width: 100%;
+  padding: 12px 0px 18px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+.my-Paypal-box-btn {
+  width: 75%;
+}
+.Seats-box p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+
+  line-height: normal;
+}
+.nav-list-1-logout a span img {
+  width: 32px;
+  height: 32px;
+}
+.PERSON-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0px 20px 0px;
+}
+
+.PERSON-box p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.PERSON-box button {
+  background: #ffd700;
+  border: 1px solid #ffd700;
+  padding: 5px 22px;
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.3s;
+}
+
+.PERSON-box button:hover {
+  background: transparent;
+  color: #ffd700;
+}
+
+.tour-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css */
+
+.fade-slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-title h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hero-title p {
+  color: #fff;
+  text-align: center;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.hero-title button {
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 14px 45px;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hero-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css
+salider-css-salider-csssalider-css-salider-css-salider-css */
+
+section.Quality {
+  width: 100%;
+  padding: 60px 0px;
+  background-image: url(../src/assets/Images/Quality-bg.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.main-Quality {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Quality-card {
+  width: 33%;
+  height: 35vh;
+  overflow-x: auto;
+}
+
+.Quality-min-card {
+  width: 75%;
+  padding: 35px 0pc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.Quality-card.more-Quality {
+  border-left: 2px solid #0f59ae;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Quality-min-card img {
+  width: 50px;
+}
+
+.Quality-min-card h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 0pc 25px 0px;
+}
+
+.Quality-min-card p {
+  color: #000;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+section.Testimonial {
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.main-Testimonial {
+  width: 100%;
+  background-image: url(../src/assets/Images/testimonial-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Testimonial-taital {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.Testimonial-taital h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 108.75% */
+}
+
+.Testimonial-box {
+  width: 100%;
+}
+
+.testimonial-slider {
+  width: 100%;
+}
+
+button.slick-arrow.slick-prev {
+  display: none !important;
+}
+
+button.slick-arrow.slick-next {
+  display: none !important;
+}
+
+.testimonial-card {
+  background-color: #0f59ae;
+  height: 38vh;
+  padding: 45px 30px;
+}
+
+.slick-list {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.testimonial-name-tital {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-dp {
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial-dp img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.testimonial-name-tital span h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.testimonial-name-tital span h3 {
+  color: #ffffffa3;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.testimonial-card p {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 6.6em;
+  transition: max-height 0.3s ease;
+}
+
+ul.slick-dots {
+  bottom: 20px !important;
+}
+.Payment-Method-box {
+  width: 100%;
+}
+
+.Payment-Method-box h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.slick-dots li button:before {
+  border: 2px solid #ffd700 !important;
+  border-radius: 50px !important;
+  color: transparent !important;
+  width: 20px;
+  height: 20px;
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffd700 !important;
+}
+
+.form-checkout-container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.name--ar {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.name--ar label {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.name--ar input {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 14px;
+  outline: none;
+}
+
+.name--ahti-new {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name--ahti-new p {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.checkbox--ar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paypal-buttons-disabled {
+  width: 100%;
+  padding-top: 40px;
+}
+
+div#zoid-paypal-buttons-uid_0d58d2f234_mta6ndk6mdi {
+}
+footer {
+  width: 100%;
+  background-color: #0f59ae;
+  padding: 70px 0px;
+}
+
+.main-container {
+}
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-part-1 {
+  width: 28%;
+}
+
+.footer-part-2 {
+  width: 22%;
+}
+
+.footer-part-1 p {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 54px 0px 40px 0px;
+}
+
+.footer-logo {
+  width: 40%;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-socuil-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer-socuil-icon img {
+  width: 8%;
+}
+
+.footer-part-2 h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+
+.footer-part-2 ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-part-2 ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-part-2 ul li span {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-part-2 ul li span img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-part-2 ul li p {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  width: 80%;
+}
+
+.footer-imger-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 0px;
+}
+
+.pic-footer {
+  width: 30%;    height: 10vh;
+}
+
+.pic-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.whatapp-btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background: transparent;
+}
+
+button.whatapp-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+section.hero-about {
+  width: 100%;
+  padding: 325px 0px 200px 0px;
+  background-image: url(../src/assets/Images/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.main-about1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about1-tital {
+  width: 40%;
+  text-align: center;
+}
+
+.about1-tital h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+
+.about1-tital p {
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+section.Charter {
+  width: 100%;
+  padding: 100px 0px 50px 0px;
+  background-position: center;
+  background-image: url(../src/assets/Images/who-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-Charter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Charter-tital {
+  width: 70%;
+}
+
+.Charter-video {
+  width: 100%;
+  height: 70vh;
+}
+
+.Charter-video img {
+  width: 100%;
+  height: 100%;
+}
+
+.Charter-tital h2 {
+  color: #061138;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 108.75% */
+}
+
+.Charter-tital p {
+  color: #000;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 30px 140px 40px 140px;
+}
+
+.color-change h2 {
+  color: #fff !important;
+}
+
+.color-change p {
+  color: #fff !important;
+}
+
+.about3-border {
+  border-left: 2px solid #ffd700 !important;
+}
+
+section.Our-History {
+  width: 100%;
+  padding: 100px 0px 115px 0px;
+}
+
+.main-Our-History {
+  width: 100%;
+}
+
+.Our-History-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Our-History-tital {
+  width: 48%;
+}
+
+.Our-History-img {
+  width: 50%;
+  height: 55vh;
+}
+
+.Our-History-img img {
+  width: 100%;
+  height: 100%;
+}
+.name--ahti-new {
+  padding-top: 3%;
+}
+/* .my-Paypal-box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+} */
+
+.trlate-box {
+  display: flex;
+  /* gap: 8px; */
+  align-items: center;
+}
+
+.trlate-box svg {
+  width: 20px;
+  height: 20px;
+}
+.goog-te-gadget-simple {
+  background: transparent !important;
+  border: none !important;
+}
+
+.goog-te-gadget-simple span {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+  border: none !important;
+}
+
+.goog-te-gadget-simple img {
+  display: none;
+}
+
+.Our-History-tital h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Our-History-tital p {
+  color: #000;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 30px;
+  width: 80%;
+}
+
+section.Tours2 {
+  width: 100%;
+  padding: 80px 0px 60px 0px;
+}
+
+.main-Tours2 {
+  width: 100%;
+}
+
+.Tours2-input-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f59ae;
+  padding: 40px 80px;
+}
+
+.Tours2-in {
+  width: 32%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Tours2-input-box button {
+  width: 24%;
+  border: 1px solid #d5ae82;
+  background: #ffd700;
+  padding: 25px 0px;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button.whatapp-btn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background: transparent;
+  z-index: 999;
+}
+
+button.whatapp-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+section.Contact-Message {
+  width: 100%;
+  padding: 90px 0px;
+}
+
+.main-Contact-Message {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Contact-Message-form {
+  width: 49%;
+}
+
+.container-Message-map {
+  width: 48%;
+  height: 80vh;
+}
+
+.Contact-Message-form h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 87px;
+  /* 174% */
+}
+
+.Contact-Message-form p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 60%;
+}
+
+.Contact-Message-form form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px 0px;
+  padding-top: 50px;
+}
+
+.Contact-Message-input-box {
+  width: 48%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.more-drop-dwom {
+  width: 100% !important;
+}
+
+.Contact-Message-input-box label {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Contact-Message-input-box input {
+  border: 1px solid #d5ae82;
+  padding: 28px 20px;
+  width: 100%;
+  color: #807474;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+}
+
+.more-padding {
+  padding: 28px 20px !important;
+  border: 1px solid #d5ae82;
+}
+
+.Contact-in {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.color-change-option {
+  color: #807474 !important;
+}
+
+.Contact-Message-input-box textarea {
+  border: 1px solid #d5ae82;
+  padding: 28px 20px;
+  width: 100% !important;
+  color: #807474;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  resize: none;
+  height: 18vh !important;
+}
+
+section.Contact-Address {
+  width: 100%;
+  padding: 130px 0px;
+}
+
+.main-Contact-Address {
+  width: 100%;
+}
+
+.Contact-Address-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Contact-Address-card {
+  width: 24%;
+  height: 60vh;
+  border: 2px solid #ffd700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.Contact-Address-icon-part {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Contact-Address-icon-part svg {
+  width: 45px;
+  height: 45px;
+}
+
+.Contact-Address-icon-part h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 5px 0px;
+}
+
+.Contact-Address-icon-part p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Contact-Address-card h4 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Contact-Address-card h3 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.more-with {
+  width: 50% !important;
+}
+
+section.Obssesion {
+  width: 100%;
+  padding: 95px 0px 130px 0px;
+}
+
+.main-Obssesion {
+  width: 100%;
+}
+
+.Obssesion-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Obssesion-part-1 {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.Obssesion-part-2 {
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  width: 32%;
+  padding: 35px 25px;
+}
+
+.Obssesion-tital {
+  width: 100%;
+}
+
+.Obssesion-tital h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Obssesion-tital span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.Obssesion-tital span p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+span {
+}
+
+.Obssesion-tital span svg {
+  width: 20px;
+  height: 20px;
+}
+
+.Obssesion-img {
+  width: 100%;
+}
+
+.Obssesion-img img {
+  width: 100%;
+}
+
+.Obssesion-tital h3 {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 20px;
+}
+
+.Depature-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.Depature-line {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #000;
+  justify-content: flex-end;
+}
+
+.Depature-pt-1 {
+  width: 50%;
+}
+
+.Depature-pt-1 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Depature-pt-1 ul li {
+  color: #000;
+  font-family: "Urbanist";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Price-icon-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.Depature-pt-1.Depature-line {
+  padding-left: 30px;
+}
+.Price-icon-box span p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #a29797;
+}
+
+.Price-icon-box span h3 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Price-form-box {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.Price-form-box h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+.Price-form-box input {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 15px;
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+}
+
+.price-in {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.more-paddings {
+  padding: 15px !important;
+  border: 1px solid #000;
+}
+
+.color-change-options {
+  color: #061138 !important;
+  font-family: "Playfair Display" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+}
+
+.Price-Details-box {
+  width: 100%;
+  padding: 50px 0px 25px 0px;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.Price-Details-box h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Total-Payment-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0px 50px 0px;
+}
+
+.Total-Payment-box h2 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Total-Payment-box h3 {
+  color: #061138;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Price-Add-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Price-icon-box svg {
+  width: 40px;
+  height: 40px;
+}
+
+.obssesion-heading {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+section.Booking-card {
+  width: 100%;
+  padding: 90px 0px 130px 0px;
+}
+
+.main-Booking-card {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Booking-card-part-1 {
+  width: 66%;
+}
+.Booking-card-part-2.more-part-2 {
+  width: 32%;
+}
+.Booking-card-part-2 {
+  width: 38%;
+  background: #0f59ae;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 40px 25px;
+}
+
+.Booking-card-part-99 {
+  width: 100%;
+  background: #0f59ae;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 40px 25px;
+}
+
+.Booking-card-part-99 h4 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Booking-card-part-2 h4 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.border-bottom-h2 {
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.one-main-box {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Discount-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Discount-box h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Discount-box h3 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Discount-box.box-top-border {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+}
+
+.booking-card-heading h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+
+h2.with-id {
+  width: 80%;
+}
+
+.Your-Cart-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 14px;
+  gap: 20px;
+  /* height: 28vh; */
+}
+
+.Your-Cart-img {
+  width: 18%;
+  height: 8vh;
+}
+.Your-Cart-img.hel-new-class {
+  height: 22vh;
+}
+.Your-Cart-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.Your-Cart-tital {
+  width: 78%;
+}
+
+.Your-Cart-tital-heading {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Your-Cart-tital-heading h2 {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 0px !important;
+}
+
+.icon-list-box {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  padding: 20px 0px 30px 0px;
+}
+
+.icon-list-box span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 14px;
+}
+
+.Remove-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Remove-btn-box button {
+  background: #ffd700;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 8px;
+  width: 120px;
+}
+
+button.Edit {
+  background: transparent !important;
+  color: #ffd700 !important;
+}
+
+.icon-list-box span p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Your-Cart-main-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* cheack-box-cheack-boxcheack-box-cheack-boxcheack-box-cheack-boxcheack-box-cheack-box */
+
+/* From Uiverse.io by vishnupprajapat */
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border-radius: 3px;
+  border: 1px solid #ffd700;
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ffd700;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 8px;
+}
+
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: #ffd700;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: #ffd700;
+  border-color: #ffd700;
+
+  animation: wave-46 0.4s ease;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+.Tours-card-tital::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* cheack-box-cheack-boxcheack-box-cheack-boxcheack-box-cheack-boxcheack-box-cheack-box */
+
+section.Login {
+  width: 100%;
+  background-color: #0f59ae;
+  background-image: url(../src/assets/Images/login-bg.png);
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button.crous {
+  top: 30px;
+  position: absolute;
+  right: 30px;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+button.crous img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-Login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 50px;
+}
+
+.Login-bg {
+  width: 45%;
+  height: 99.6vh;
+}
+
+.Login-form {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+}
+
+.Login-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Login-form h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Login-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.LOGIN-input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.LOGIN-input-box label {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 120% */
+  padding-top: 10px;
+}
+
+.LOGIN-input-box input {
+  border: 1px solid #ffd700;
+  background: transparent;
+  padding: 22px;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.Login-form {
+}
+
+.Login-form form button {
+  background: #ffd700;
+  padding: 10px 40px;
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s;
+}
+
+.Login-form form button:hover {
+  background: transparent;
+  color: #ffd700;
+}
+
+.Login-form form p {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.Login-form form p span a {
+  font-weight: 700;
+  color: #fff;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(253, 255, 243);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+/* #checkbox:checked + .toggle .bars {
+  margin-left: 13px;
+} */
+
+#checkbox:checked + .toggle #bar2 {
+  transform: translateY(14px) rotate(60deg);
+  margin-left: 0;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  transform: translateY(28px) rotate(-60deg);
+  transition-duration: 0.3s;
+  transform-origin: left;
+  z-index: 1;
+}
+
+#checkbox:checked + .toggle {
+  transform: rotate(-90deg);
+}
+.Header--end dropdown {
+}
+
+.Header--end .dropdown {
+  width: 100%;
+}
+
+.Header--end .dropdown button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  border: none;
+}
+
+.Header--end .dropdown .dropdown-menu.show {
+  background-color: #0f59ae;
+  display: flex;
+  gap: 20px;
+  top: 13px !important;
+  flex-direction: column;
+  padding: 30px;
+  align-items: flex-start;
+  width: 200px;
+  transform: translate(210px, 70px) !important;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Header--end .dropdown a.dropdown-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Urbanist";
+}
+
+.dropdown-menu {
+  display: none;
+}
+/* #checkbox:checked + .toggle #bar3 {
+  transform: rotate(90deg);
+  transition-duration: .3s;
+  transform-origin:right;
+} */
+
+section.Gallery2 {
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.main-Gallery2 {
+  width: 100%;
+}
+
+.Gallery2-img-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.Gallery2-card {
+  width: 33%;
+  height: 40vh;
+}
+
+.Gallery2-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Gallery2-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addtourform {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    zoom: 1;
+  }
+}
+@media screen and (min-width: 2160px) {
+  html {
+    zoom: 1.4;
+  }
+}
+@media screen and (min-width: 2500px) {
+  html {
+    zoom: 1.7;
+  }
+}
+@media screen and (min-width: 3000px) {
+  html {
+    zoom: 1.9;
+  }
+}
+
+@media screen and (min-width: 3500px) {
+  html {
+    zoom: 2.3;
+  }
+}
+
+@media screen and (min-width: 4500px) {
+  html {
+    zoom: 2.6;
+  }
+}
+
+@media screen and (min-width: 4800px) {
+  html {
+    zoom: 2.8;
+  }
+}
+@media screen and (min-width: 5500px) {
+  html {
+    zoom: 2.8;
+  }
+}
+
+@media screen and (min-width: 7500px) {
+  html {
+    zoom: 4;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .nav-list-1-contact span p {
+    font-size: 18px;
+  }
+
+  .nav-list-1-logout span p {
+    font-size: 18px;
+  }
+
+  .nav-list-1-logout {
+    gap: 35px;
+  }
+
+  .nav-list-2 ul li {
+    font-size: 18px;
+    padding: 30px 30px 28px 30px;
+  }
+
+  section.landing-hero {
+    padding: 240px 0px 0px 0px;
+  }
+
+  .hero-title h2 {
+    font-size: 80px;
+  }
+
+  .hero-title p {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .Login-form h2 {
+    font-size: 65px;
+  }
+
+  .Login-form form {
+    gap: 15px;
+    padding-top: 24px;
+  }
+
+  .LOGIN-input-box input {
+    padding: 20px;
+  }
+
+  .hero-title button {
+    font-size: 20px;
+    padding: 12px 38px;
+  }
+
+  .Booking-tital h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .Booking-tital p {
+    font-size: 18px;
+    padding-top: 24px;
+  }
+
+  section.Booking {
+    padding: 70px 0px;
+  }
+
+  .select-station-drop {
+    padding: 20px;
+    padding-left: 80px;
+  }
+
+  button.hover-btn span {
+    font-size: 20px;
+    padding: 12px 30px;
+  }
+
+  .Destination-h2 h2 {
+    font-size: 65px;
+  }
+
+  section.Destination {
+    padding: 70px 0px 140px 0px;
+  }
+
+  .Destination-box {
+    padding-top: 50px;
+  }
+
+  .Destination-card {
+  }
+
+  .Destination-card-hover button {
+    font-size: 20px;
+  }
+
+  .Destination-card-hover h2 {
+    font-size: 40px;
+  }
+
+  h2 {
+  }
+
+  .Tours-tital h2 {
+    font-size: 65px;
+    font-style: normal;
+  }
+  .Tours-card {
+    width: 23%;
+  }
+
+  .Tours-card-tital h2 {
+    font-size: 24px;
+  }
+
+  span.Duration p {
+    font-size: 18px;
+  }
+
+  .Seats-box p {
+    font-size: 18px;
+  }
+
+  .PERSON-box p {
+    font-size: 16px;
+  }
+
+  section.Tours {
+    padding: 60px 0px 70px 0px;
+  }
+
+  .tour-btn-box {
+    padding-top: 50px;
+  }
+
+  .Quality-min-card h2 {
+    font-size: 30px;
+    padding: 10px 0pc 15px 0px;
+  }
+
+  .Quality-min-card p {
+    font-size: 16px;
+  }
+
+  .Quality-min-card img {
+    width: 40px;
+  }
+
+  .Quality-min-card {
+    padding: 30px 0pc;
+  }
+
+  section.Quality {
+    padding: 44px 0px;
+  }
+
+  .Testimonial-taital h2 {
+    font-size: 65px;
+  }
+
+  .Testimonial-taital {
+    padding-bottom: 60px;
+  }
+
+  section.Testimonial {
+    padding: 70px 0px;
+  }
+
+  ul.slick-dots {
+    bottom: 20px !important;
+  }
+
+  .testimonial-card p {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .testimonial-name-tital span h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-name-tital span h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-card {
+    padding: 34px 25px;
+    height: 34vh;
+  }
+
+  .testimonial-dp {
+    width: 85px;
+  }
+
+  .testimonial-name-tital {
+    gap: 15px;
+  }
+
+  .footer-part-2 h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer-part-2 ul li p {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 60px 0px;
+  }
+
+  .footer-part-1 p {
+    font-size: 18px;
+    padding: 40px 0px 35px 0px;
+  }
+
+  .about1-tital h2 {
+    font-size: 80px;
+    padding-bottom: 15px;
+  }
+
+  .about1-tital p {
+    font-size: 18px;
+  }
+
+  section.hero-about {
+    padding: 300px 0px 180px 0px;
+  }
+
+  .Charter-tital h2 {
+    font-size: 65px;
+  }
+
+  .Charter-tital p {
+    font-size: 18px;
+    padding: 24px 140px 30px 140px;
+  }
+
+  .Quality-min-card h2 {
+    padding-right: 100px;
+  }
+
+  .Our-History-tital h2 {
+    font-size: 50px;
+  }
+
+  .Our-History-tital p {
+    font-size: 18px;
+    padding-top: 24px;
+  }
+
+  section.Our-History {
+    padding: 80px 0px 90px 0px;
+  }
+
+  .Tours2-input-box button {
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+
+  .Tours2-input-box {
+    padding: 30px 80px;
+  }
+
+  .Contact-Message-form h2 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  .Contact-Message-form p {
+    font-size: 18px;
+  }
+
+  .Contact-Message-form form {
+    gap: 20px 0px;
+    padding-top: 30px;
+  }
+
+  .Contact-Message-input-box label {
+    font-size: 18px;
+  }
+
+  .Contact-Message-input-box input {
+    font-size: 18px;
+    padding: 18px 14px;
+  }
+
+  .more-padding {
+    padding: 18px 14px !important;
+  }
+
+  .color-change-option {
+    font-size: 18px !important;
+  }
+
+  .Contact-Message-input-box textarea {
+    font-size: 18px;
+    padding: 18px 14px;
+  }
+
+  section.Contact-Message {
+    padding: 70px 0px;
+  }
+
+  section.Contact-Address {
+    padding: 100px 0px;
+  }
+
+  .Contact-Address-icon-part h2 {
+    font-size: 24px;
+  }
+
+  .Contact-Address-card h4 {
+    font-size: 18px;
+  }
+
+  .Contact-Address-card h3 {
+    font-size: 18px;
+  }
+
+  .Contact-Address-card {
+    height: 52vh;
+  }
+
+  .Obssesion-tital h2 {
+    font-size: 35px;
+  }
+
+  .Price-form-box h2 {
+    font-size: 35px;
+  }
+
+  .Depature-pt-1 ul li {
+    font-size: 25px;
+  }
+
+  .Price-Details-box {
+    padding: 35px 0px 20px 0px;
+  }
+
+  .Total-Payment-box {
+    padding: 20px 0px 35px 0px;
+  }
+
+  section.Obssesion {
+    padding: 70px 0px 100px 0px;
+  }
+
+  section.Booking-card {
+    padding: 60px 0px 100px 0px;
+  }
+
+  .booking-card-heading h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  .Your-Cart-tital-heading h2 {
+    font-size: 24px;
+  }
+
+  .icon-list-box span p {
+    font-size: 18px;
+  }
+
+  .Remove-btn-box button {
+    font-size: 16px;
+    padding: 5px;
+    width: 105px;
+  }
+
+  .icon-list-box {
+    padding: 14px 0px 24px 0px;
+  }
+
+  .Your-Cart-main-box {
+    gap: 30px;
+  }
+
+  .Booking-card-part-2 h4 {
+    font-size: 30px;
+  }
+
+  .border-bottom-h2 {
+    padding-bottom: 30px;
+  }
+
+  .one-main-box {
+    padding-top: 30px;
+    gap: 14px;
+  }
+
+  .Discount-box h2 {
+    font-size: 18px;
+  }
+
+  .Discount-box h3 {
+    font-size: 15px;
+  }
+
+  .Booking-card-part-2 {
+    padding: 30px 20px;
+  }
+
+  .profilepic h5 {
+    font-size: 20px;
+  }
+  .profilepic img {
+    width: 26%;
+    height: 44px;
+  }
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(138px, 55px) !important;
+  }
+  .Tours-box-Tours {
+    gap: 20px 18px;
+  }
+  .container-Message-map {
+    height: 59vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .hero-title h2 {
+    font-size: 65px;
+  }
+
+  section.landing-hero {
+    padding: 260px 0px 0px 0px;
+  }
+  section.Gallery2 {
+    padding: 60px 0px;
+  }
+
+  .Gallery2-img-box {
+    padding-bottom: 40px;
+  }
+
+  .hero-title button {
+    font-size: 18px;
+  }
+
+  section.Booking {
+    padding: 60px 0px;
+  }
+
+  .Booking-tital h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  span.selected-option {
+    font-size: 18px;
+  }
+
+  button.hover-btn span {
+    font-size: 18px;
+  }
+
+  .icon-bg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Destination-h2 h2 {
+    font-size: 55px;
+  }
+
+  section.Destination {
+    padding: 55px 0px 110px 0px;
+  }
+
+  .Destination-box {
+    padding-top: 40px;
+  }
+
+  .Destination-card {
+    height: 65vh;
+  }
+
+  .Destination-card-hover img {
+    width: 40%;
+  }
+
+  .Destination-card-hover h2 {
+    font-size: 34px;
+  }
+
+  .Destination-card-hover button {
+    font-size: 18px;
+    padding: 15px 40px;
+  }
+
+  .Destination-main-box p {
+    font-size: 34px;
+  }
+
+  .Tours-tital h2 {
+    font-size: 55px;
+  }
+
+  section.Tours {
+    padding: 50px 0px 60px 0px;
+  }
+
+  .Tours-box {
+    padding-top: 60px;
+  }
+
+  .tour-btn-box {
+    padding-top: 40px;
+  }
+
+  .Tours-card-tital h2 {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+
+  .Header--end {
+    width: 28%;
+  }
+
+  .logoHeader {
+    width: 8%;
+  }
+
+  .profilepic img {
+    width: 24%;
+  }
+
+  .profilepic {
+    width: 45%;
+  }
+
+  .booking-card-heading h2 {
+    font-size: 30px;
+  }
+
+  .Your-Cart-tital-heading h2 {
+    font-size: 20px;
+  }
+
+  .Booking-card-part-2 h4 {
+    font-size: 24px;
+  }
+
+  .border-bottom-h2 {
+    padding-bottom: 25px;
+  }
+
+  .Your-Cart-img {
+    height: 24vh;
+  }
+
+  .Discount-box h2 {
+    font-size: 16px;
+  }
+
+  span.Duration p {
+    font-size: 16px;
+  }
+
+  span.Duration svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  span.Duration {
+    gap: 10px;
+  }
+
+  .Seats-box p {
+    font-size: 16px;
+  }
+
+  .Seats-box {
+    padding: 10px 0px 14px 0px;
+  }
+
+  .PERSON-box p {
+    font-size: 14px;
+  }
+
+  .PERSON-box button {
+    padding: 4px 18px;
+    font-size: 16px;
+  }
+
+  .PERSON-box {
+    padding: 10px 0px 16px 0px;
+  }
+
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(185px, 55px) !important;
+  }
+
+  .Quality-min-card h2 {
+    font-size: 24px;
+    padding-right: 0px;
+  }
+
+  .Quality-min-card {
+    padding: 24px 0pc;
+  }
+
+  .Quality-min-card img {
+    width: 35px;
+  }
+
+  .Testimonial-taital h2 {
+    font-size: 55px;
+  }
+
+  .Testimonial-taital {
+    padding-bottom: 50px;
+  }
+
+  .footer-part-2 h2 {
+    font-size: 24px;
+  }
+
+  .footer-part-2 ul li span {
+    width: 30px;
+    height: 30px;
+  }
+  .side-bar-container-thiviyo {
+    padding: 200px 30px 0px 30px;
+    width: 250px;
+  }
+  .footer-part-2 ul li {
+    align-items: flex-start;
+  }
+
+  .footer-part-2 h2 {
+    font-size: 24px;
+  }
+
+  .footer-part-2 ul li span {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-part-2 ul li {
+    align-items: flex-start;
+  }
+
+  .about1-tital h2 {
+    font-size: 65px;
+  }
+
+  .Charter-tital h2 {
+    font-size: 50px;
+  }
+
+  .Charter-tital p {
+    padding: 18px 140px 30px 140px;
+  }
+
+  .Quality-min-card h2 {
+    font-size: 20px;
+  }
+
+  .Quality-min-card {
+    padding: 18px 0pc;
+  }
+
+  .Quality-min-card img {
+    width: 34px;
+  }
+
+  section.Our-History {
+    padding: 60px 0px 70px 0px;
+  }
+
+  .Our-History-tital h2 {
+    font-size: 44px;
+  }
+
+  .Our-History-tital p {
+    padding-top: 15px;
+  }
+
+  .select-station-drop {
+    padding: 14px;
+    padding-left: 64px;
+  }
+
+  .Tours2-input-box button {
+    padding: 14px 0px;
+    font-size: 18px;
+  }
+
+  .select-station-drop {
+    padding: 14px;
+    padding-left: 64px;
+  }
+
+  .Tours2-input-box button {
+    padding: 14px 0px;
+    font-size: 18px;
+  }
+
+  section.Contact-Message {
+    padding: 60px 0px;
+  }
+
+  section.Contact-Address {
+    padding: 70px 0px;
+  }
+
+  .Contact-Address-icon-part h2 {
+    font-size: 20px;
+  }
+
+  .Contact-Address-icon-part svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .Login-form h2 {
+    font-size: 55px;
+  }
+
+  .Login-form form {
+    gap: 15px;
+    padding-top: 24px;
+  }
+
+  .LOGIN-input-box input {
+    padding: 18px;
+  }
+
+  .Price-form-box h2 {
+    font-size: 30px;
+  }
+
+  .Price-icon-box {
+    padding-bottom: 30px;
+  }
+
+  .Price-icon-box span h3 {
+    font-size: 20px;
+  }
+
+  .Price-icon-box span p {
+    font-size: 18px;
+  }
+
+  .Price-icon-box svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .Price-form-box {
+    padding-top: 25px;
+  }
+
+  .Obssesion-tital h2 {
+    font-size: 28px;
+  }
+
+  .Price-Details-box h2 {
+    font-size: 25px;
+  }
+
+  .Obssesion-tital h3 {
+    font-size: 16px;
+  }
+
+  .Depature-pt-1 ul li {
+    font-size: 20px;
+  }
+
+  .Depature-pt-1 ul {
+    gap: 10px;
+  }
+
+  .Price-form-box input {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .color-change-options {
+    font-size: 12px !important;
+  }
+
+  .more-paddings {
+    padding: 12px !important;
+  }
+
+  .Obssesion-tital span p {
+    font-size: 18px;
+  }
+
+  .Total-Payment-box h3 {
+    font-size: 28px;
+  }
+
+  button.hover-btn span {
+    font-size: 14px;
+  }
+  .nav-logo img {
+    width: 58%;
+  }
+
+  .Tours-card {
+    height: 58vh;
+    width: 32%;
+  }
+
+  .Payment-Method-box h2 {
+    font-size: 30px;
+  }
+
+  .name--ar label {
+    font-size: 18px;
+  }
+
+  .name--ar {
+    padding-top: 24px;
+  }
+
+  .paypal-buttons-disabled {
+    padding-top: 30px;
+  }
+  .Tours-box-Tours {
+    gap: 20px 18px;
+  }
+  .container-Message-map {
+    height: 59vh;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .Tours-card {
+    height: 50vh;
+  }
+  .Destination-card {
+    height: 55vh;
+  }
+  .Contact-Address-card {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section {
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+  }
+
+  header {
+    padding: 0px 5%;
+  }
+  .goog-te-gadget-simple span {
+    font-size: 14px;
+  }
+
+  .nav-list-1-contact span p {
+    font-size: 14px;
+  }
+
+  .nav-list-1-logout span p {
+    font-size: 14px;
+  }
+
+  .nav-list-2 ul li {
+    font-size: 14px;
+    padding: 25px;
+  }
+  .Quality-card {
+    width: 33%;
+    height: 28vh;
+    overflow-x: auto;
+  }
+
+  .container-Message-map {
+    height: 55vh;
+  }
+  nav.nav-1 {
+    height: 16vh;
+  }
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(70px, 55px) !important;
+  }
+  .nav-logo {
+    padding: 18px 0px;
+  }
+  .Gallery2-card {
+    width: 32%;
+  }
+  .nav-list-1 {
+    padding: 16px 0px 16px 30px;
+  }
+  .side-bar-container-thiviyo {
+    padding: 190px 24px 0px 24px;
+    width: 250px;
+  }
+
+  .dashboard-section {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .dashboard-card {
+    gap: 20px !important;
+  }
+
+  .chart-heading .card-details p {
+    font-size: 30px;
+  }
+
+  .Header--center {
+    width: 60%;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .searchbar input {
+    width: 100%;
+    height: 45px;
+  }
+
+  .searchbar {
+    width: 54%;
+  }
+
+  .logoHeader {
+    width: 8%;
+  }
+
+  .profilepic {
+    width: 58%;
+  }
+
+  .profilepic h5 {
+    font-size: 16px;
+  }
+
+  .profilepic img {
+    height: 38px;
+    width: 25%;
+  }
+
+  .customer-details-section {
+    padding: 0px !important;
+  }
+
+  .booking-section {
+    padding: 0px !important;
+  }
+
+  /* .destination-section {
+      padding: 0px !important;
+  } */
+
+  .tour-section {
+    padding: 0px !important;
+  }
+  .nav-list-1-contact span svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-list-1-logout {
+    gap: 25px;
+  }
+
+  .hero-title {
+    width: 75%;
+  }
+
+  .hero-title h2 {
+    font-size: 60px;
+  }
+
+  section.landing-hero {
+    padding: 340px 0px 0px 0px;
+  }
+
+  .Booking-tital h2 {
+    font-size: 42px;
+  }
+
+  .Booking-tital {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-Booking {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .Booking-in-box {
+    width: 100%;
+  }
+
+  .Booking-tital p {
+    padding-top: 15px;
+  }
+
+  section.Booking {
+    padding: 45px 0px;
+  }
+
+  .Destination-h2 h2 {
+    font-size: 45px;
+    line-height: 70px;
+  }
+
+  .Destination-card {
+    height: 48vh;
+  }
+
+  .Destination-main-box p {
+    font-size: 30px;
+  }
+
+  section.Destination {
+    padding: 40px 0px 70px 0px;
+  }
+
+  .Destination-box {
+    padding-top: 30px;
+  }
+
+  .Tours-box {
+    padding-top: 30px;
+    gap: 20px 15px;
+  }
+
+  .Tours-in-box {
+    width: 34%;
+  }
+
+  .Tours-tital h2 {
+    font-size: 45px;
+  }
+
+  section.Tours {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .tour-btn-box {
+    padding-top: 35px;
+  }
+
+  button.hover-btn span {
+    font-size: 16px;
+  }
+
+  section.Quality {
+    padding: 30px 0px;
+  }
+
+  .Quality-min-card h2 {
+    font-size: 18px;
+    padding: 10px 0pc 15px 0px;
+  }
+
+  .Tours-card-img {
+    padding: 10px;
+  }
+
+  .Tours-card-tital {
+    padding: 0px 15px;
+  }
+
+  .Tours-card-tital h2 {
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+
+  span.Duration p {
+    font-size: 12px;
+  }
+
+  .Seats-box p {
+    font-size: 12px;
+  }
+
+  span.Duration svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Seats-box {
+    padding: 8px 0px 10px 0px;
+  }
+
+  .PERSON-box button {
+    font-size: 12px;
+  }
+
+  .PERSON-box p {
+    font-size: 12px;
+  }
+
+  span.selected-option {
+    font-size: 14px;
+  }
+
+  .icon-bg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .drop-icon {
+  }
+
+  .drop-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .Quality-min-card {
+    width: 85%;
+  }
+
+  .Quality-min-card p {
+    font-size: 14px;
+  }
+
+  .Quality-min-card img {
+    width: 34px;
+  }
+
+  section.Testimonial {
+    padding: 30px 0px 60px 0px;
+  }
+
+  .Testimonial-taital h2 {
+    font-size: 45px;
+  }
+
+  .Testimonial-taital {
+    padding-bottom: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px 20px;
+    height: 28vh;
+  }
+
+  .testimonial-dp {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-name-tital span h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+  }
+
+  .testimonial-name-tital span h3 {
+    font-size: 12px;
+  }
+
+  .testimonial-card p {
+    font-size: 14px;
+    padding-top: 18px;
+  }
+
+  .slick-dots li button {
+    width: 0px;
+    height: 12px;
+    padding: 0px;
+  }
+
+  .slick-dots li {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer {
+    padding: 40px 5%;
+  }
+
+  .footer-part-2 h2 {
+    font-size: 16px;
+  }
+
+  .footer-part-2 ul li p {
+    font-size: 14px;
+  }
+
+  .footer-part-2 ul li span {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-part-2 ul li {
+    gap: 8px;
+  }
+
+  .footer-h2 {
+  }
+
+  .about1-tital h2 {
+    font-size: 60px;
+  }
+
+  .about1-tital {
+    width: 75%;
+  }
+
+  section.hero-about {
+    padding: 200px 0px 140px 0px;
+  }
+
+  section.Charter {
+    padding: 60px 0px 40px 0px;
+  }
+
+  .Charter-tital h2 {
+    font-size: 40px;
+  }
+
+  .Charter-tital p {
+    font-size: 14px;
+    padding: 10px 64px 40px 64px;
+  }
+
+  .Charter-video {
+    height: 42vh;
+  }
+
+  .Our-History-tital h2 {
+    font-size: 35px;
+  }
+
+  .Our-History-tital p {
+    width: 100%;
+    font-size: 14px;
+    padding-top: 14px;
+  }
+
+  section.Our-History {
+    padding: 44px 0px 40px 0px;
+  }
+
+  /* <<<<<<< HEAD part-1 p { */
+  .part-1 p {
+    font-size: 16px;
+    padding: 24px 0px 25px 0px;
+  }
+
+  section.Tours2 {
+    padding: 50px 0px 40px 0px;
+  }
+
+  .Tours2-input-box {
+    padding: 20px 40px;
+  }
+
+  .select-station-drop {
+    padding-left: 54px;
+  }
+
+  .icon-bg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Tours2-input-box button {
+    padding: 14px 0px;
+    font-size: 14px;
+  }
+
+  .Tours-box-Tours {
+    gap: 20px 15px;
+    padding-top: 40px;
+  }
+
+  .footer-part-1 p {
+    font-size: 15px;
+  }
+
+  ul.options-list {
+    top: 52px;
+  }
+
+  .Contact-Message-form h2 {
+    font-size: 35px;
+  }
+
+  .Contact-Message-form p {
+    font-size: 16px;
+    width: 74%;
+  }
+
+  .Contact-Message-form form {
+    padding-top: 24px;
+    gap: 18px 0px;
+  }
+
+  .Contact-Message-input-box label {
+    font-size: 14px;
+  }
+
+  .Contact-Message-input-box input {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .more-padding {
+    padding: 14px 10px !important;
+  }
+
+  .color-change-option {
+    font-size: 16px !important;
+  }
+
+  .Contact-Message-input-box textarea {
+    font-size: 16px;
+    padding: 14px 11px;
+  }
+
+  .Contact-Address-box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .Contact-Address-card {
+    width: 48%;
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .Contact-Address-icon-part h2 {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .Contact-Address-icon-part p {
+    font-size: 14px;
+  }
+
+  .Contact-Address-card h4 {
+    font-size: 14px;
+  }
+
+  .Contact-Address-card h3 {
+    font-size: 16px;
+  }
+
+  button.whatapp-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  section.Login {
+    padding: 0px !important;
+  }
+
+  button.crous {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Login-form h2 {
+    font-size: 38px;
+  }
+
+  .LOGIN-input-box input {
+    padding: 14px;
+  }
+
+  .LOGIN-input-box label {
+    font-size: 15px;
+  }
+
+  .Login-form form button {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+
+  .Obssesion-tital h2 {
+    font-size: 24px;
+  }
+
+  section.Obssesion {
+    padding: 50px 0px 80px 0px;
+  }
+
+  .Obssesion-tital span p {
+    font-size: 16px;
+  }
+
+  .obssesion-heading {
+    padding-bottom: 25px;
+  }
+
+  .Obssesion-part-2 {
+    padding: 25px 15px;
+    width: 38%;
+  }
+
+  .Price-form-box h2 {
+    font-size: 25px;
+  }
+
+  .Price-form-box {
+    padding-top: 20px;
+    gap: 10px;
+  }
+
+  .Price-form-box {
+  }
+
+  .Price-Details-box h2 {
+    font-size: 20px;
+  }
+
+  .Price-Details-box {
+    padding: 20px 0px 15px 0px;
+  }
+
+  .Total-Payment-box h3 {
+    font-size: 22px;
+  }
+
+  .Total-Payment-box h2 {
+    font-size: 18px;
+  }
+
+  .Depature-pt-1 ul li {
+    font-size: 18px;
+  }
+
+  .Obssesion-part-1 {
+    width: 60%;
+  }
+
+  .Tours-card {
+    height: 40vh;
+  }
+
+  .Tours-card-img img {
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+  }
+
+  .checkoutContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Booking-card-part-2 {
+    width: 65%;
+  }
+
+  .form-checkout-container {
+    width: 100%;
+  }
+
+  .Gallery2-card {
+    width: 48%;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fade-slider {
+    height: 100vh;
+  }
+
+  section.landing-hero {
+    height: 100%;
+    padding: 300px 0px 0px 0px;
+  }
+  .Your-Cart-img.hel-new-class {
+    height: 20vh;
+  }
+  .hero-title h2 {
+    font-size: 45px;
+  }
+  .goog-te-gadget-simple span {
+    font-size: 10px;
+  }
+
+  .trlate-box {
+    /* gap: 5px; */
+  }
+
+  .trlate-box svg {
+    width: 14px;
+    height: 14px;
+  }
+  .Obssesion-img img {
+    height: 28vh;
+    object-fit: cover;
+  }
+  .Booking-card-part-2.more-part-2 {
+    width: 80%;
+  }
+  .side-bar-container-thiviyo {
+    position: fixed;
+  }
+
+  .iUNkpW {
+    width: 100% !important;
+  }
+  .logoHeader {
+    width: 11%;
+  }
+  .ahti {
+    position: fixed;
+    top: 38px !important;
+    z-index: 999;
+    right: 70%;
+  }
+
+  .Dash--Header--main {
+    padding: 10px 20px;
+  }
+
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(12px, 55px) !important;
+  }
+  .Header--center {
+    width: 50%;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .togglebuttonHeader {
+    display: none;
+  }
+
+  .searchbar {
+    width: 65%;
+  }
+
+  .profilepic {
+    width: 70%;
+  }
+
+  .profilepic h5 {
+    font-size: 14px;
+  }
+  .iUNkpW {
+    padding: 124px 30px 0px 30px;
+  }
+  .hero-title p {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .hero-title button {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  section.Booking-card {
+    padding: 40px 0px 50px 0px;
+  }
+
+  .Booking-tital h2 {
+    font-size: 35px;
+  }
+
+  .Booking-tital p {
+    padding-top: 10px;
+  }
+
+  .Destination-h2 h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .Destination-card {
+    height: 40vh;
+  }
+
+  .more-with {
+    width: 100% !important;
+  }
+
+  .Destination-card-hover {
+    padding: 18px 0px;
+    gap: 20px;
+  }
+
+  .Destination-card-hover img {
+    width: 34%;
+  }
+
+  .Destination-card-hover h2 {
+    font-size: 28px;
+  }
+
+  .Destination-card-hover button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  .Destination-main-box p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h2.with-id {
+  }
+
+  .booking-card-heading h2 {
+    font-size: 30px;
+  }
+
+  .Your-Cart-tital-heading h2 {
+    font-size: 20px;
+  }
+
+  .Booking-card-part-2 h4 {
+    font-size: 24px;
+  }
+
+  .border-bottom-h2 {
+    padding-bottom: 25px;
+  }
+
+  .Your-Cart-img {
+    height: 15vh;
+  }
+  .checkoutContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Booking-card-part-2 {
+    width: 100%;
+  }
+
+  .form-checkout-container {
+    width: 100%;
+  }
+
+  .Your-Cart-img {
+  }
+
+  .Payment-Method-box h2 {
+    font-size: 28px;
+  }
+
+  .name--ar {
+    padding-top: 18px;
+  }
+
+  .name--ar label {
+    font-size: 16px;
+  }
+
+  .name--ahti-new p {
+    font-size: 16px;
+  }
+
+  .name--ar input {
+    padding: 12px;
+  }
+  .Discount-box h2 {
+    font-size: 16px;
+  }
+
+  .main-Booking-card {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .Booking-card-part-1 {
+    width: 100%;
+    overflow-x: auto;
+    /* height: 70vh; */
+  }
+
+  .Booking-card-part-2 {
+    width: 50%;
+  }
+
+  .border-bottom-h2 {
+    padding-bottom: 24px;
+  }
+
+  section.Destination {
+    padding: 30px 0px 60px 0px;
+  }
+
+  .Tours-tital h2 {
+    font-size: 35px;
+    line-height: 20px;
+  }
+
+  .Tours-card-tital h2 {
+    font-size: 16px;
+    padding-bottom: 14px;
+  }
+
+  .Tours-card-tital {
+    padding: 0px 10px;
+  }
+
+  span.Duration {
+    gap: 10px;
+  }
+
+  span.Duration svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Seats-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .Seats-box p {
+    font-size: 14px;
+  }
+
+  span.Duration p {
+    font-size: 14px;
+  }
+
+  .Testimonial-taital h2 {
+    font-size: 35px;
+  }
+
+  .main-footer {
+    flex-wrap: wrap;
+    gap: 40px 0px;
+  }
+
+  .footer-part-1 {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 14%;
+  }
+
+  .footer-part-1 p {
+    padding: 20px 0px;
+    width: 70%;
+  }
+
+  .footer-socuil-icon img {
+    width: 4%;
+  }
+
+  .footer-part-2 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-part-2 ul {
+  }
+
+  .footer-part-2 ul li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-part-2 ul li p {
+    text-align: left;
+  }
+
+  .about1-tital h2 {
+    font-size: 45px;
+  }
+
+  .about1-tital p {
+    font-size: 16px;
+  }
+
+  section.hero-about {
+    padding: 190px 0px 110px 0px;
+  }
+
+  .nav-list-1-contact {
+    gap: 30px;
+  }
+
+  .nav-list-1-contact span p {
+    font-size: 12px;
+  }
+
+  .nav-list-1-logout span p {
+    font-size: 12px;
+  }
+
+  .nav-list-1 {
+    padding: 14px 0px 14px 30px;
+  }
+
+  nav.nav-1 {
+    height: 13vh;
+  }
+
+  .nav-list-2 ul li {
+    padding: 15px 25px 15px 25px;
+  }
+
+  .Charter-tital h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .Charter-tital p {
+    padding: 14px 35px 35px 35px;
+  }
+
+  .Charter-video {
+    height: 30vh;
+  }
+
+  .main-Quality {
+    flex-direction: column;
+  }
+
+  .Quality-card {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Quality-min-card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about3-border {
+    border: none !important;
+    border-top: 2px solid #ffd700 !important;
+  }
+
+  .Quality-card.more-Quality {
+    border: none;
+  }
+
+  .Our-History-img {
+    width: 42%;
+  }
+
+  section.Our-History {
+    padding: 10px 0px 35px 0px;
+  }
+
+  .Our-History-tital h2 {
+    font-size: 30px;
+  }
+
+  .Our-History-tital {
+    width: 54%;
+  }
+
+  .about1-tital h2 {
+    font-size: 45px;
+  }
+
+  .about1-tital p {
+    font-size: 16px;
+  }
+
+  section.hero-about {
+    padding: 190px 0px 110px 0px;
+  }
+
+  .nav-list-1-contact {
+    gap: 30px;
+  }
+
+  .nav-list-1-contact span p {
+    font-size: 12px;
+  }
+
+  .nav-list-1-logout span p {
+    font-size: 12px;
+  }
+
+  .nav-list-1 {
+    padding: 14px 0px 14px 30px;
+  }
+
+  nav.nav-1 {
+    height: 13vh;
+  }
+
+  .Charter-tital h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .Charter-tital p {
+    padding: 14px 35px 35px 35px;
+  }
+
+  .Charter-video {
+    height: 30vh;
+  }
+
+  .main-Quality {
+    flex-direction: column;
+  }
+
+  .Quality-card {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Quality-min-card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about3-border {
+    border: none !important;
+    border-top: 2px solid #ffd700 !important;
+  }
+
+  .main-Login {
+    gap: 20px;
+  }
+
+  .Login-bg {
+    width: 44%;
+  }
+
+  .Login-form h2 {
+    font-size: 32px;
+  }
+
+  .Login-form form {
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .LOGIN-input-box input {
+    padding: 10px;
+  }
+
+  .Login-form form p {
+    font-size: 14px;
+  }
+
+  .Our-History-img {
+    width: 42%;
+  }
+
+  section.Our-History {
+    padding: 10px 0px 35px 0px;
+  }
+
+  .Our-History-tital h2 {
+    font-size: 30px;
+  }
+
+  .Our-History-tital {
+    width: 54%;
+  }
+
+  p {
+  }
+
+  .Tours2-input-box {
+    flex-wrap: wrap;
+    gap: 20px 0px;
+    padding: 24px 30px;
+  }
+
+  .Tours2-in {
+    width: 48%;
+  }
+
+  .Tours2-input-box button {
+    width: 48%;
+  }
+
+  .Tours-box-Tours {
+  }
+
+  .Tours-card {
+    width: 48%;
+    height: 50vh;
+  }
+
+  .container-Message-map {
+    width: 48%;
+    height: 64vh;
+  }
+
+  .container-Message-map {
+    width: 48%;
+    height: 64vh;
+  }
+
+  .main-Contact-Message {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .Contact-Message-form {
+    width: 75%;
+  }
+
+  .container-Message-map {
+    width: 75%;
+  }
+
+  section.Contact-Message {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .Obssesion-box {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .Obssesion-part-1 {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .Obssesion-part-2 {
+    width: 75%;
+  }
+
+  section.Obssesion {
+    padding: 40px 0px 50px 0px;
+  }
+  .Gallery2-card {
+    width: 48%;
+    height: 20vh;
+  }
+
+  .quality-card-ts-2 {
+    height: 16vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* header {
+      display: none;
+  } */
+
+  .fade-slider {
+    height: 85vh;
+  }
+  .nav-list-2 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Tours-card {
+    height: 100%;
+  }
+  section.landing-hero {
+    padding: 260px 0px 0px 0px;
+  }
+  .Booking-card-part-2.more-part-2 {
+    width: 100%;
+  }
+  .hero-title {
+    width: 100%;
+  }
+
+  .hero-title h2 {
+    font-size: 35px;
+  }
+  .name--ar {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .Payment-Method-box h2 {
+    font-size: 25px;
+  }
+
+  .name--ar {
+  }
+
+  .name--ahti-new p {
+    font-size: 14px;
+  }
+
+  .form-checkout-container {
+    padding: 20px;
+  }
+  .hero-title p {
+    padding-top: 14px;
+    padding-bottom: 24px;
+    font-size: 14px;
+  }
+  .Header--end .dropdown .dropdown-menu.show {
+    transform: translate(-8px, 35px) !important;
+  }
+  .hero-title button {
+    font-size: 12px;
+    padding: 8px 25px;
+  }
+
+  .Booking-tital h2 {
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .booking-card-heading h2 {
+    font-size: 24px;
+  }
+
+  .Your-Cart-box {
+    flex-direction: column;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .Your-Cart-img {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .Your-Cart-tital {
+    width: 100%;
+  }
+  .side-bar-container-thiviyo {
+    margin: 0px !important;
+  }
+  .Your-Cart-tital-heading h2 {
+    font-size: 16px;
+  }
+
+  .icon-list-box span p {
+    font-size: 12px;
+  }
+
+  .Remove-btn-box {
+    justify-content: center;
+  }
+
+  .Booking-card-part-2 {
+    width: 100%;
+  }
+
+  .Booking-card-part-2 h4 {
+    font-size: 20px;
+  }
+
+  .border-bottom-h2 {
+    padding-bottom: 20px;
+  }
+
+  .Discount-box h2 {
+    font-size: 14px;
+  }
+
+  .one-main-box {
+    padding-top: 25px;
+  }
+
+  .Booking-tital p {
+    font-size: 14px;
+  }
+
+  .main-Booking {
+    gap: 20px;
+  }
+
+  .dution-in {
+    width: 100%;
+  }
+
+  button.hover-btn span {
+    font-size: 14px;
+  }
+
+  section.Booking {
+    padding: 30px 0px;
+  }
+
+  .Destination-h2 h2 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .Destination-box {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .Destination-main-box {
+    width: 100%;
+  }
+
+  .Destination-main-box p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .Destination-card-hover img {
+    width: 24%;
+  }
+
+  .Destination-card-hover h2 {
+    font-size: 24px;
+  }
+  .Dash--Header--main {
+    justify-content: flex-start;
+  }
+
+  .profilepic {
+    width: 65%;
+  }
+
+  .Header--end {
+    width: 40%;
+  }
+
+  .Dash--Header--main {
+    gap: 30px;
+  }
+
+  .logoHeader {
+    width: 20%;
+    height: 70px;
+  }
+
+  .Dash--Header--main img {
+    width: 30%;
+    height: 100%;
+  }
+
+  .Header--center {
+    width: 48%;
+  }
+
+  .searchbar {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .searchbar img {
+    width: 20px;
+    height: 20px;
+  }
+  .iUNkpW {
+    padding: 130px 20px 0px 20px;
+  }
+  .Header--end .dropdown button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .searchbar input {
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+  }
+
+  .logoHeader img {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+  }
+
+  .ahti {
+    right: 30px;
+    top: 30px !important;
+  }
+  section.Destination {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .Destination-card-hover button {
+    font-size: 12px;
+    padding: 8px 24px;
+  }
+
+  .Tours-tital {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .Tours-in-box {
+    width: 100%;
+  }
+
+  .Tours-tital h2 {
+    font-size: 30px;
+  }
+
+  .Tours-card {
+    width: 100%;
+  }
+
+  .Tours-box {
+    flex-wrap: wrap;
+  }
+
+  .tour-btn-box {
+    padding-top: 25px;
+  }
+
+  section.Tours {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .Quality-card {
+    width: 100%;
+  }
+
+  .Quality-card.more-Quality {
+    border: none !important;
+    border-top: 2px solid #0f59ae !important;
+  }
+
+  section.Testimonial {
+    padding: 10px 0px 60px 0px;
+  }
+  .Quality-card {
+    height: 26vh;
+  }
+  .Our-History-img {
+    height: 20vh;
+  }
+
+  .trlate-box svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .goog-te-gadget-simple span {
+    font-size: 16px;
+  }
+  .Testimonial-taital h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  /* .testimonial-card {
+          width: 375px !important;
+      } */
+
+  .slick-track {
+    gap: 10px !important;
+  }
+
+  .footer-part-2 {
+    width: 100%;
+  }
+
+  .footer-part-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 30%;
+  }
+
+  .footer-socuil-icon {
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  .main-Login {
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px 30px;
+  }
+
+  .Login-bg {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .Login-form {
+    width: 100%;
+  }
+
+  .Login-form h2 {
+    font-size: 28px;
+  }
+
+  .Login-form form {
+    padding-top: 14px;
+  }
+
+  .LOGIN-input-box input {
+    padding: 8px;
+  }
+
+  div#root {
+  }
+
+  .footer-socuil-icon img {
+    width: 8%;
+  }
+
+  .footer-part-2 ul li {
+  }
+
+  .footer-part-2 ul {
+    gap: 21px;
+  }
+
+  .footer-part-2 h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  .about1-tital {
+    width: 100%;
+  }
+
+  .about1-tital h2 {
+    font-size: 35px;
+  }
+
+  .about1-tital p {
+    font-size: 14px;
+  }
+
+  section.hero-about {
+    padding: 160px 0px 90px 0px;
+  }
+
+  .Charter-tital h2 {
+    font-size: 24px;
+  }
+
+  .Charter-tital {
+    width: 100%;
+  }
+
+  .Charter-tital p {
+    padding: 14px 30px 30px 30px;
+  }
+
+  .Charter-video {
+    height: 22vh;
+  }
+
+  section.Charter {
+    padding: 50px 0px 30px 0px;
+  }
+
+  .Quality-card.more-Quality.about3-border {
+    border-top: 2px solid #ffd700 !important;
+  }
+
+  .Our-History-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section.Our-History {
+    padding: 35px 0px;
+  }
+
+  .Our-History-img {
+    width: 100%;
+  }
+
+  .Our-History-tital {
+    width: 100%;
+  }
+
+  .footer-part-2 ul li {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-part-2 ul li p {
+    text-align: center;
+  }
+
+  .footer-socuil-icon {
+    justify-content: center !important;
+  }
+
+  .Quality-min-card h2 {
+    font-size: 16px;
+  }
+
+  .Tours2-in {
+    width: 100%;
+  }
+
+  .Tours2-input-box button {
+    width: 100%;
+  }
+
+  .drop-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .drop-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  section.Tours2 {
+    padding: 35px 0px 35px 0px;
+  }
+
+  .Contact-Message-form {
+    width: 100%;
+  }
+
+  .Contact-Message-form h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .Contact-Message-form p {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Contact-Message-form form {
+    padding-top: 30px;
+    gap: 15px 0px;
+  }
+
+  .Contact-Message-input-box {
+    width: 100%;
+  }
+
+  .Contact-Message-input-box input {
+    font-size: 14px;
+    padding: 14px 12px;
+  }
+
+  .main-Contact-Message {
+    gap: 30px;
+  }
+
+  .container-Message-map {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .Contact-Address-card {
+    width: 100%;
+    height: 32vh;
+  }
+
+  section.Contact-Address {
+    padding: 44px 0px;
+  }
+
+  button.whatapp-btn {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .slick-initialized .slick-slide {
+    width: 420px !important;
+  }
+
+  /* On screens 600px or smaller, hide the menu */
+
+  .nav-box {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: -200px;
+  }
+
+  .nav-box.show {
+    display: flex;
+  }
+
+  nav.nav-1 {
+    height: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    border: none;
+    width: 38%;
+    position: relative;
+    z-index: 999;
+  }
+
+  .nav-boxshow {
+    background-color: #0f59ae;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    right: 0px;
+    width: 100%;
+    padding: 140px 40px 40px 40px;
+    gap: 30px;
+    transition: 1s;
+    height: 75vh;
+    justify-content: flex-end;
+  }
+
+  header {
+  }
+
+  .nav-list-2 {
+  }
+
+  .nav-list-2 ul {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .nav-list-2 ul li {
+    border: none;
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .nav-list-1 {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .nav-list-1-logout span p {
+    font-size: 18px;
+  }
+
+  .nav-list-1-contact span p {
+    font-size: 18px;
+  }
+
+  .nav-list-1-contact {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .nav-list-1-contact span {
+    width: 100%;
+  }
+
+  .nav-list-1-logout {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: relative;
+    z-index: 999;
+  }
+
+  .Depature-box {
+    width: 100%;
+  }
+
+  .Obssesion-tital h2 {
+    font-size: 22px;
+  }
+
+  .Obssesion-tital span p {
+    font-size: 14px;
+  }
+
+  .obssesion-heading {
+    padding-bottom: 20px;
+  }
+
+  .Obssesion-part-1 {
+    gap: 20px;
+  }
+
+  .Obssesion-part-2 {
+    width: 100%;
+  }
+
+  .Price-form-box h2 {
+    font-size: 20px;
+  }
+
+  .Price-icon-box span p {
+    font-size: 15px;
+  }
+
+  .Price-icon-box span h3 {
+    font-size: 18px;
+  }
+
+  .Price-Details-box h2 {
+    font-size: 18px;
+  }
+
+  .Price-Details-box {
+    padding: 15px 0px 10px 0px;
+  }
+
+  .Total-Payment-box h2 {
+    font-size: 16px;
+  }
+
+  .Total-Payment-box h3 {
+    font-size: 20px;
+  }
+
+  .trlate-box svg {
+    width: 11px;
+    height: 11px;
+}
+
+.Tours-card-tital {
+  width: 100%;
+  /* padding: unset; */
+  height: 100%;
+  overflow-y: unset;
+}
+
+a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+}
+}
