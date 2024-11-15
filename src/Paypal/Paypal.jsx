@@ -9,7 +9,7 @@ const Paypal =({productname,price,handlepaymentcallback,isFormComplete})=>{
 
     
     const initialOptions = {
-        clientId: "AQ1Tr95YMO2qTvEbf4ek-iw3HrQ1BJIt1P_rUvKQYdLfzqn0pOA0b0-S16R9G6yLxksb0uriJZ6NHNIb",
+ 
         currency: "EUR",
         intent: "capture",
       };
